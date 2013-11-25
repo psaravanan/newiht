@@ -1,0 +1,237 @@
+<div>
+    <img class="bg" src="/Site/Images/team-bg.jpg" />
+</div>
+<div id="parentslide" class="content  details_page">
+    <div id="team_menubox">
+        <div id="menutitle">
+            <img id="imgtitle" class="reverseskew" src="Images/aboutus-title.png">
+        </div>
+        <div class="reverseskew team_leftmenu">
+            <div style="padding-left: 73px"><a class="check_service_detail" data-page-name="about_us" data-item-index="0" data-sibling-index="0" href="#">History</a></div>
+            <div style="padding-left: 54px"><a class="check_service_detail" data-page-name="about_us" data-item-index="0" data-sibling-index="1" href="#">Mantra</a></div>
+            <div style="padding-left: 36px"><a class="check_service_detail" data-page-name="about_us" data-item-index="0" data-sibling-index="2" href="#">Milestone</a></div>
+            <div style="padding-left: 18px">
+                <a class="check_service_detail" data-page-name="about_us" data-item-index="0" data-sibling-index="3" href="#">Team</a>
+                <ul class="team_sublink">
+                    <li style="padding-left: 0px; margin-left: -33px; color: #1F92D1;" onclick="bindteamSublinks('-670', '220')">- Visionary</li>
+                    <li style="padding-left: 0px; margin-left: -46px; color: #99B23F;" onclick="bindteamSublinks('-2722','493')">- Executive</li>
+                    <li style="padding-left: 0px; margin-left: -63px; color: #CF7814;" onclick="bindteamSublinks('-4585','775')">- Consultant</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="locationStutus"><span></span></div>
+    <div id="team_contentarea">
+
+        <img class="reverseskew" id="photoImg1" src="Images/kauntheyas.jpg" />
+        <h1 class="reverseskew">Kauntheya Sivananthan</h1>
+        <p class="reverseskew jobtitleskew">Chairman & Chief Executive Officer</p>
+        <div class="reverseskew para">
+            <div class="lW" style="width: 221px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 211px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 201px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 192px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 182px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 173px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 170px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 163px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 154px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 145px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 136px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 124px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 129px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 116px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 105px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 102px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 67px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 57px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 48px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 38px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 29px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 19px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 9px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 0px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 0px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 0px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 0px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 0px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <div class="lW" style="width: 0px;"></div>
+            <div class="rW" style="width: 0px;"></div>
+            <p class="details">
+                Having spent most of his initial working years in building and growing successful new business, it was but the obvious step for K - as he is fondly called by his friends and colleagues- to start on his own. Circa 2007 found him architecting the step up of iHorse Technologies. Responsible for formulating and executing the company's strategy, K has been at helm of all key strategic initiatives at iHorse ever since its inception.
+            Kauntheya holds a Master in Business Administration with Computer Science Background. Prior to iHorse, he has launched three startups in the international market.
+            </p>
+            <p class="details">Beyond the office, Kauntheya is a passionate painter and an avid sports buff</p>
+        </div>
+        <div class="reverseskew thirdpara">
+            <img id="photoImg2"  src="Images/saravana.jpg" />
+            <h1>Saravanan Swaminathan</h1>
+            <p class="jobtitle">Director & Chief Technology Officer</p>
+            <div class="childpara">
+                <p class="details">With over eighteen years of Software experience, and a significant majority of them in management positions, Saravanan is the driving force at iHorse providing technology direction to the organization and also clients. Saravanan has spent a major part of his career with HP at different levels. During his tenure with HP, Saravanan has managed very large projects for fortune 500 companies across the globe. </p>
+            </div>
+        </div>
+        <div class="reverseskew thirdpara">
+            <img src="Images/daniel.jpg" />
+            <h1>Daniel Brody</h1>
+            <p class="jobtitle">President</p>
+            <div class="childpara">
+                <p class="details">
+                    Known as a 'Technology Guru', Daniel is an accomplished business builder with extensive success as CIO, COO and General Manager in diverse industries. An innovator who leads system development initiatives that improve operational efficiency and contribute to product enhancement and market expansion.
+                 Hands-on with P&L responsibility, strategic in designing/implementing major projects, entrepreneurial in exploring growth opportunities, creative in establishing channel partnerships, collaborative in coaching/guiding both clients and associates to higher performance.
+                </p>
+            </div>
+        </div>
+        <div class="reverseskew thirdpara">
+            <img src="Images/thirus.jpg" />
+            <h1>Thirukumaran Sivananthan</h1>
+            <p class="jobtitle">Managing Director</p>
+            <div class="childpara">
+                <p class="details">Better known as 'Thiru', he has been involved in myriad aspects of the Company's operations and growth. A well efficient and very innovative web strategist. He has placed iHorse at its helm in the web space. His success stories are numerous.  iHorse is another feather in his cap.</p>
+                <p class="details">A MBA degree holder with Computer Science Background, today Thiru is guiding iHorse to its pinnacle in the web space. Thiru has played a major role in diversifying iHorse into different online businesses.</p>
+            </div>
+        </div>
+
+        <!--Executive-->
+
+
+        <div class="reverseskew thirdpara">
+            <img src="Images/Matej.jpg" />
+            <h1>Matej Ukmar </h1>
+            <p class="jobtitle">VP Technology - Mobile Practice, Offsite</p>
+            <div class="childpara">
+                <p class="details">With over 17 years of experience, Matej Ukmar, is a specialist software architect for mobile platforms like iOS, Android, Blackberry etc. He also has expertise in client/server applications, web applications, animated presentations, games and mobile applications. </p>
+                <p>Apart from being a software engineer, Matej is also an artist and loves creating vector based computer graphics.</p>
+            </div>
+        </div>
+        <div class="reverseskew thirdpara">
+            <img src="Images/SidambaraK.Raja.jpg" />
+            <h1>Sidambararaja</h1>
+            <p class="jobtitle">Chief Architect - .Net and Java</p>
+            <div class="childpara">
+                <p class="details">
+                    Raja has over 15 years of broad experience in software industry with main expertise in architecting mission critical applications for fortune 500 companies in varied industries.. An experienced leader with an enthusiasm for innovation, Raja holds a patent on software model for throttled task decomposition.At Ihorse Raja is responsible for Product innovation and architecture, Project architecture consulting and mentoring technology team. 
+                </p>
+                <p>Besides his passion for technology, he is avid reader and movie buff.</p>
+            </div>
+        </div>
+        <div class="reverseskew thirdpara">
+            <img src="Images/Anand.jpg" />
+            <h1>Anandakrishnan</h1>
+            <p class="jobtitle">VP - Managed Services Practice</p>
+            <div class="childpara">
+                <p class="details">
+                    Anand has about 18 years of experience in IT Support and Managed Services, with expertise on infrastructure design and capacity planning. With a Masters in Computer Application, Anand's previous assignment was as Director for IT at SPI-Global.
+                </p>
+                <p>Electronics is what keeps him occupied out of office hours.</p>
+            </div>
+        </div>
+        <div class="reverseskew thirdpara">
+            <img src="Images/vijay.jpg" />
+            <h1>Vijayaraja</h1>
+            <p class="jobtitle">VP - .Net & Mobile Practice</p>
+            <div class="childpara">
+                <p class="details">
+                    Withover 16 years of demonstrated experience in various fields in Information Technology, Vijay's has a proven track record of successfully delivering high performance Enterprise application, Internet Business Solutions and internet of things by managing offshore services with large and geographically dispersed team . His strength is delivery within defined timeline and budget. 
+                </p>
+                <p>Over the years he has worked extensively with clients in North America (US), UK, APAC and the Middle East and has managed delivery across varied industries like BFSI, Logistics, Healthcare, Retail, Real Estate and Education.</p>
+            </div>
+        </div>
+        <div class="reverseskew thirdpara">
+            <img  src="Images/thamiz.jpg" />
+            <h1>Thamizudeen </h1>
+            <p class="jobtitle">VP - Open Source and Design Practice</p>
+            <div class="childpara">
+                <p class="details">
+                    Thamiz with over 12 years of IT experience, is an advocate of processes and oversees implementation of processes and their betterment in all aspects of iHorse operations.His focus has been on improving employee engagement, increasing competitiveness and increasing the depth of services.Thamiz has worked extensively in Insurance, Retail and Healthcare domains for international clients. 
+                </p>
+                <p>Music and playtime with his kids keeps Thamiz rejuvenated.</p>
+            </div>
+        </div>
+        <div class="reverseskew thirdpara">
+            <img src="Images/kathir.jpg" />
+            <h1>Kathiravan </h1>
+            <p class="jobtitle">Creative Head - Design Services Practice</p>
+            <div class="childpara">
+                <p class="details">
+                    Kathir, more a Creative thinker than an artist has 20 years of experiences spanning various multimedia agencies. Journalist, Animator, Creative Director, VP, CEO  - he has successfully donned many a hats. After his graduation from Media GN College of Arts, Netherlands, Kathir went on to complete his post-graduation in Sociology and also has certifications in graphics, animations, AutoCAD and computer applications.
+                </p>
+                <p>Art of any kind is his passion and painting is a real favorite.</p>
+            </div>
+        </div>
+
+
+
+        <!-- Consultant  --->
+        <div class="reverseskew lastpara">
+
+            <h1>Consultants </h1>
+            <!--<p class="jobtitle">Open Source and Design Practice</p>-->
+            <div class="childpara">
+                <span>Our consultants are educationally and professionally highly qualified.</span>
+                <span>Above 95% of the resources in iHorse are either graduates or post-graduates in their respective technical lines.</span>
+                <span>Above 80% of the consultants are already experienced in their respective technology lines.</span>
+                <span>Being a focused IT consulting firm, iHorse hires the best from all over the world to get the right people on board.</span>
+                <span>iHorse team is a mix of people from various countries and nationalities.</span>
+                <span>Our consultants have in-depth experience in their respective fields and have handled major clients in their current and previous employments. </span>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        
+        locationMsg('-670');
+
+    });
+
+    
+
+    function bindteamSublinks(cont, drg) {
+
+        $('.mCSB_dragger').animate({ left: drg + 'px' }, { duration: 900 });
+
+        $('.mCSB_container').stop().animate({ left: cont + 'px' }, {
+            duration: 500, complete: function () {
+                var leftval = $('.mCSB_container').offset().left;
+                
+                $('.locationStutus').slideUp('slow');
+                locationMsg(leftval);
+
+            }
+        });
+
+    }
+</script>

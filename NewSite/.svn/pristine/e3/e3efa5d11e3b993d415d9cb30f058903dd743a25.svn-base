@@ -1,0 +1,251 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="Style/Style1.css" rel="stylesheet" />
+    <link href="Style/Gallery/supersized.css" rel="stylesheet" />
+    <link href="Style/Gallery/supersized.shutter.css" rel="stylesheet" />
+    <link href="Style/jquery.mCustomScrollbar.css" rel="stylesheet" />
+    <script src="Script/jquery-1.7.1.js"></script>
+    <!--<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBhmopauP9OF4S5dt8hwPfajv3Q-5pr_IQ&sensor=false"></script>-->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="Script/jquery.cyclotron.js"></script>
+    <script src="Script/gmaps.js"></script>
+    <script src="Script/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="Script/Gallery/supersized.3.2.7.min.js"></script>
+    <script src="Script/Gallery/supersized.shutter.min.js"></script>
+    <script src="Script/loadxmldoc.js"></script>
+    <script src="Script/history.js"></script>
+    <script src="Script/history.adapter.jquery.js"></script>
+    <script src="Script/history.html4.js"></script>
+    <script src="Script/application.js"></script>
+    <link rel="stylesheet" href="Style/queryLoader.css" type="text/css" />
+    <script type='text/javascript' src='Script/queryLoader.js'></script>
+    <title>iHorse Home</title>
+</head>
+<body>
+
+    <div class="MainFrame">
+        <header>
+            <nav>
+                <ul class="deeplinking" id="topnavigation">
+                    <li><a rel="external" data-page-name="about_us" data-which-navigation="top_nav_link" class="top_nav_link" href="#top_navigation.html">ABOUT US</a></li>
+                    <li><a rel="external" data-page-name="services" data-which-navigation="top_nav_link" class="top_nav_link" href="#top_navigation.html">SERVICES</a></li>
+                    <li><a rel="external" data-page-name="products" data-which-navigation="top_nav_link" class="top_nav_link" href="#top_navigation.html">PRODUCTS</a></li>
+                    <li><a rel="external" data-page-name="programs" data-which-navigation="top_nav_link" class="top_nav_link" href="#top_navigation.html">PROGRAMS</a></li>
+                    <li><a rel="external" data-page-name="careers" data-which-navigation="top_nav_link" class="top_nav_link" href="#top_navigation.html">CAREERS</a></li>
+                    <li><a rel="external" data-page-name="news_events" data-which-navigation="top_nav_link" class="top_nav_link" href="#top_navigation.html">NEWS & EVENTS</a></li>
+                    <!--<li><a rel="external" data-page-name="blog" class="top_nav_link" href="blog.html">BLOG</a></li>-->
+                    <li><a rel="external" data-page-name="contacts" data-which-navigation="top_nav_link" class="top_nav_link" href="#contact.html">CONTACT US</a></li>
+                </ul>
+           
+                <ul id="sn-navigation">
+                    <li><a target="_blank" href="https://www.facebook.com/iHorseTech.en" ><img src="Images/SN-Facebook.jpg" /></a></li>
+                    <li><a target="_blank" href="http://www.linkedin.com/company/ihorse-inc-"><img src="Images/SN-in.jpg" /></a></li>
+                    <li><a target="_blank" href="https://twitter.com/ihorsetech"><img src="Images/SN-twitter.jpg" /></a></li>
+                    <li><a target="_blank" href="http://fr.viadeo.com/fr/groups/?containerId=002idmg1mw6ftsf" ><img src="Images/SN-viadeo.jpg" /></a></li>
+                    <li><a ><img src="Images/SN-franch.jpg" /></a></li>
+                    <li style="margin-left: 7%;"><img src="Images/SN-keyboard.jpg" style="padding-bottom: 1%;" /></li>
+                </ul>
+            </nav> 
+
+        </header>
+        <div class="Content content">
+        </div>
+
+        <div id="controls-wrapper" class="load-item">
+            <div id="controls">
+                 <a id="play-button">
+                    <img id="pauseplay" src="Images/HomeGallery/pause.png" /></a>
+                <!--Slide counter-->
+                <!--<div id="slidecounter">
+                <span class="slidenumber"></span> / <span class="totalslides"></span>
+            </div>-->
+
+                <!--Slide captions displayed here-->
+                <!--<div id="slidecaption"></div>-->
+
+                <!--Thumb Tray button-->
+                <!--<a id="tray-button"><img id="tray-arrow" src="Images/HomeGallery/button-tray-up.png"/></a>-->
+
+                <!--Navigation-->
+                <ul id="slide-list"></ul>
+            </div>
+        </div>
+    </div>
+    <div class="fixedPanels">
+        <div id="topleftholder"></div>
+            <div id="servicemenu">
+                <ul>
+                    <li class="reverseskew"><a href="#InnerPage.html" data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="services" data-item-index="0" data-sibling-index="0">
+                        <img src="Images/service icons/1-web based app.png" /></a></li>
+                    <li class="reverseskew"><a href="#InnerPage.html" data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="services" data-item-index="1" data-sibling-index="0">
+                        <img src="Images/service icons/2-portal development.png" /></a></li>
+                    <li class="reverseskew"><a href="#InnerPage.html" data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="services" data-item-index="2" data-sibling-index="0">
+                        <img src="Images/service icons/3-re engineering.png" /></a></li>
+                    <li class="reverseskew"><a href="#InnerPage.html" data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="services" data-item-index="3" data-sibling-index="0">
+                        <img src="Images/service icons/4-maintenance and support.png" /></a></li>
+                    <li class="reverseskew"><a href="#InnerPage.html" data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="services" data-item-index="4" data-sibling-index="0">
+                        <img src="Images/service icons/5-testing.png" /></a></li>
+                    <li class="reverseskew"><a href="#InnerPage.html" data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="services" data-item-index="0" data-sibling-index="1">
+                        <img src="Images/service icons/6-mobile app development.png" /></a></li>
+                    <li class="reverseskew"><a href="#InnerPage.html" data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="services" data-item-index="0" data-sibling-index="2">
+                        <img src="Images/service icons/7-IT Planning Network Architecture.png" /></a></li>
+                    <li class="reverseskew"><a href="#InnerPage.html" data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="services" data-item-index="1" data-sibling-index="2">
+                        <img src="Images/service icons/8- IT Consulting Integration.png" /></a></li>
+                    <li class="reverseskew"><a href="#InnerPage.html" data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="services" data-item-index="2" data-sibling-index="2">
+                        <img src="Images/service icons/9-IT Support Services.png" /></a></li>
+                    <li class="reverseskew"><a href="#InnerPage.html" data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="services" data-item-index="3" data-sibling-index="2">
+                        <img src="Images/service icons/10-24 7 Monitoring.png" /></a></li>
+                    <li class="reverseskew"><a href="#InnerPage.html" data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="services" data-item-index="0" data-sibling-index="3">
+                        <img src="Images/service icons/11-Web Designing.png" /></a></li>
+                    <li class="reverseskew"><a href="#InnerPage.html" data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="services" data-item-index="1" data-sibling-index="3">
+                        <img src="Images/service icons/12-Packaging Designing.png" /></a></li>
+                    <li class="reverseskew"><a href="#InnerPage.html" data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="services" data-item-index="2" data-sibling-index="3">
+                        <img src="Images/service icons/13-Prototype Designing.png" /></a></li>
+                    <li class="reverseskew"><a href="#InnerPage.html" data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="services" data-item-index="3" data-sibling-index="3">
+                        <img src="Images/service icons/14-Marketing Collaterals.png" /></a></li>
+                    <li class="reverseskew"><a href="#InnerPage.html" data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="services" data-item-index="4" data-sibling-index="3">
+                        <img src="Images/service icons/15-animation.png" /></a></li>
+                </ul>
+            </div>
+
+            <!--<div id="topleftcorner" class="mainleftPanel">
+                <a>
+                    <img id="logo" class="reverseskew" src="Images/home-logo.png" /></a>
+                <img id="watermark" disabled="disabled" class="reverseskew" src="Images/horse watermark.png" />
+            </div>-->
+
+
+        
+        <div class="mainrightPanel">
+            <a id="prevslide" class="load-item"></a>
+            <a id="nextslide" class="load-item"></a>
+        </div>
+    </div>
+    <div class="DivShutter">
+        <div class="LeftShutter">
+
+            <img id="loadingIhorse" src="Images/loading- logo.png" />
+            <!--<span>Find us in social networks</span>-->
+            <br class="Apple-interchange-newline">
+            <br class="Apple-interchange-newline">
+            <br class="Apple-interchange-newline">
+            <!--Changes especially in software is norm. Its doesnt always make with-->
+        </div>
+        <div class="RightShutter">
+        </div>
+    </div>
+
+    <div style="display: none" id="dvcheck">
+        <img id="bnrImg" src="Images/web title icon.png" />
+        <div class="reverseskew" id="titlepara">
+            <p>Changes especially in software is norm. Its doesnt always make with</p>
+
+        </div>
+        <div class="reverseskew" id="para">
+            <p>Changes especially in software is norm. Its doesnt always make business sense to recreate software fromscratch to catch up with the changing technoloiges and requirements.Thats where re-engineering plays a big role</p>
+
+        </div>
+        <div>
+            <a class="reverseskew" href="#">ENTER</a>
+
+        </div>
+       <!-- <img class="SlideObject" src="Images/banner-web-image.png" /> -->
+    </div>
+
+    <script type="text/javascript">
+       
+
+        $("*").bind("contextmenu", function () {
+            return false;
+        });
+
+        $("img").bind("contextmenu", function () {
+            return false;
+        });
+
+        //Services Start
+        $("#servicemenu ul li img").mouseenter(
+    function () {
+        $(this).stop().animate({ paddingLeft: '9px' }, '0.4s')
+    });
+        $("ul li img").mouseleave(
+        function (e) {
+            $(this).stop().animate({ paddingLeft: '0px' }, '0.4s')
+        });
+        var serviceArr = new Array("Web Based Application", "Portal development", "Application Reengineering", "Maintenance and Support", "Testing", "Mobile Practice",
+                                    "IT Planning & Network ...", "IT Consulting & Integr...", "IT Support Services", "24/7 Monitoring", "Web design", "Packaging design",
+                                    "Prototype design", "Brand Building Collate...", "Animation");
+        $("#servicemenu ul li").hover(
+          function () {
+              $(this).append($('<span class="serviceLink_tooltip">' + serviceArr[$(this).index()] + '</span>'));
+          },
+          function () {
+              $(this).find("span:last").remove();
+          });
+        //services 
+        //Gallery Code Start
+        jQuery(function ($) {
+            var divdata1 = '<div class="gallery_contentarea_text"><img id="gallery_bnrImg" src="Images/web title icon.png" /><div class="reverseskew" id="gallery_titlepara"><p>From popular to emerging technologies, we have it all covered</p></div><div class="reverseskew" id="gallery_para"><p>We offer the entire gourmet of services under WEB platforms along with Consultancy on the Choice of technology which includes  all the 3 leading technologies of .Net, PHP and Java.</p></div><div id="gallery_content_botbutton"> <a href="#InnerPage.html" data-which-navigation="check_service_detail" class="reverseskew check_service_detail" data-page-name="services" data-item-index="0" data-sibling-index="0">ENTER</a></div><div><img class="SlideObject" src="Images/banner-web-image.png"/></div></div>'
+            var divdata2 = '<div class="gallery_contentarea_text"><img id="gallery_bnrImg" src="Images/mobile title icon.png" /><div class="reverseskew" id="gallery_titlepara"><p>A complete Mobile Apps specialist</p></div><div class="reverseskew" id="gallery_para"><p>iHorse’ skilled and experienced team offer total solutions, right from initial concept design to architecting using the right technology, development and launching of the applications on handsets in all major markets</p></div><div id="gallery_content_botbutton"> <a href="#InnerPage.html" data-which-navigation="check_service_detail" class="reverseskew check_service_detail" data-page-name="services" data-item-index="0" data-sibling-index="1">ENTER</a></div><div><img class="SlideObject" src="Images/banner-mobile-image.png"/></div></div>'
+            var divdata3 = '<div class="gallery_contentarea_text"><img id="gallery_bnrImg" src="Images/managed title icon.png" /><div class="reverseskew" id="gallery_titlepara"><p>An exhaustive scope of services to suit a wide variety of your needs </p></div><div class="reverseskew" id="gallery_para"><p>iHorse’ Managed Services include IT planning, management, maintenance and service. Every solution you can hope for, we have it in our offerings</p></div><div id="gallery_content_botbutton"> <a href="#InnerPage.html" data-which-navigation="check_service_detail" class="reverseskew check_service_detail" data-page-name="services" data-item-index="" data-sibling-index="2">ENTER</a></div><div><img class="SlideObject" src="Images/banner-managed-image.png"/></div></div>'
+            //var divdata4 = $('#fst').html();
+            var divdata4 = '<div class="gallery_contentarea_text"><img id="gallery_bnrImg" src="Images/design title icon.png" /><div class="reverseskew" id="gallery_titlepara"><p>Putting in life into your products</p></div><div class="reverseskew" id="gallery_para"><p>Be it a product, a website, an idea or your communications, iHorse Design Studio combines top-notch design-agency capabilities with technology and industry expertise to bring your product to life and how!</p></div><div id="gallery_content_botbutton"> <a href="#InnerPage.html" data-which-navigation="check_service_detail" class="reverseskew check_service_detail" data-page-name="services" data-item-index="0" data-sibling-index="3">ENTER</a></div><div><img class="SlideObject" src="Images/banner-desgin-image.png"/></div></div>'
+            $.supersized({
+
+                // Functionality
+                slide_interval: 5000,       // Length between transitions
+                transition: 3,          // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+                autoplay: 0,
+                transition_speed: 500,      // Speed of transition
+
+                // Components                           
+                slide_links: 'blank',   // Individual links for each slide (Options: false, 'num', 'name', 'blank')
+                slides: [           // Slideshow Images
+                                                    { image: 'Images/banner-web-bg.jpg', title: 'Image Credit: Maria Kazvan', contentBgColor: 'rgba(0, 144, 222, 0.8)', objectimage: 'Images/banner-web-image.png', data: divdata1 },
+                                                    { image: 'Images/banner-mobile-bg.jpg', title: 'Image Credit: Maria Kazvan', contentBgColor: 'rgba(143, 173, 36, 0.9)', objectimage: 'Images/banner-web-image.png', data: divdata2 },
+                                                    { image: 'Images/banner-mannaged-bg.jpg', title: 'Image Credit: Maria Kazvan', contentBgColor: 'rgba(170, 53, 53, 0.8)', objectimage: 'Images/banner-web-image.png', data: divdata3 },
+                                                    { image: 'Images/banner-design-bg.jpg', title: 'Image Credit: Colin Wojno', contentBgColor: 'rgba(222, 119, 0, 0.9)', objectimage: 'Images/banner-web-image.png', data: divdata4 }
+
+                ]
+
+            });
+        });
+
+        //Gallery Code Ends
+
+
+
+        $(document).ready(function () {
+            loading();
+
+            $('img').draggable = false;
+            // 
+        });
+
+        function loading() {
+            //alert('hi');
+
+            setTimeout(function () {
+                $('.LeftShutter').stop().animate({ 'left': '-88%' }, { duration: 900 });
+                $('.RightShutter').stop().animate({ 'left': '117%' }, {
+                    duration: 900, complete: function () {
+
+                        api.playToggle();
+                        $('.RightShutter').hide();
+                        $('.LeftShutter').hide();
+                    }
+                });
+            }, 2000);
+
+        }
+
+        $('.ServicesLink img').hover(function () {
+            $(this).stop().animate({ 'margin-left': '12px' }, { duration: 300 })
+        }, function () {
+            $(this).stop().animate({ 'margin-left': '0px' }, { duration: 300 })
+        });
+        //QueryLoader.init();
+    </script>
+</body>
+</html>

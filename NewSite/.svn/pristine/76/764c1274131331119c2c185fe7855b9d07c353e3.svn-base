@@ -1,0 +1,248 @@
+﻿<style>
+.mCSB_container{
+    z-index: 1;
+}
+.mainrightPanel{
+    z-index: -1;
+}
+.whole_service_description{
+    z-index: 10;
+}
+</style>
+<title>IHorse Contact</title>
+
+<div id="parentslide" class="content details_page">
+    <div id="menubox" class="inner_strip_color">
+        <div id="menutitle">
+            <img id="imgtitle" class="reverseskew details_page_left_img" src="Images/contact-title.png">
+        </div>
+        <div class="reverseskew leftmenu details_page_left_list MapLeft">
+            <div style="padding-left: 83px"><span onclick="loadMap('40.74727','-73.98006', 'North America', 'AddNAmerica')">North America</span></div>
+            <div style="padding-left: 68px"><span onclick="loadMap('43.66800','-79.39032','Canada','AddCanada')">Canada</span></div>
+            <div style="padding-left: 53px"><span onclick="loadMap('49.24506','2.13372','Europe','AddEurope')">Europe</span></div>
+            <div style="padding-left: 38px"><span onclick="loadMap('11.91386','79.81447','India - Puducherry', 'AddIPondi')">India - Puducherry</span></div>
+            <div style="padding-left: 23px"><span onclick="loadMap('13.00702','80.24869','India - Chennai', 'AddIChennai')">India - Chennai</span></div>
+        </div>
+    </div>
+    <div id="contentarea" class="details_page_right">
+        <div class="whole_service_description">
+            <div class="Contact_First_Para">
+                <div id="ContactPara">
+                    <div class="lW" style="width: 91px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 73px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 79px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 68px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 57px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 47px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 47px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 82px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 84px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 75px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 61px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 52px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 53px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 85px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 84px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 73px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 62px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 53px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 53px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 90px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 70px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 79px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 68px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 56px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 20px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 43px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 37px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 87px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 76px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 68px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 58px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 47px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+                    <div class="lW" style="width: 40px;"></div>
+                    <div class="rW" style="width: 0px;"></div>
+
+                    <div id="AddNAmerica" class="locationDetails reverseskew">
+
+                        <h2>North America</h2>
+
+                        <div class="ContactAddress">
+                            600 3rd Ave, 40th Street,<br />
+                            Sulte 200, New Yark,
+                <br />
+                            NY 10016, U.S.A
+                <br />
+                            <span class="title">Telephone:</span><span class="details"> 001 3455 34887</span><br />
+
+                        </div>
+                    </div>
+                    <div id="AddCanada" class="locationDetails reverseskew">
+
+                        <h2>Canada</h2>
+                        <div class="ContactAddress">
+                            3F – 1 Saint Thomas Street Toronto,<br />
+                            ON, M5S 3M5, Canada.
+              <br />
+                            <span class="title">Telephone:</span><span class="details"> 001 3455 34887</span><br />
+
+                        </div>
+                    </div>
+                    <div id="AddEurope" class="locationDetails reverseskew">
+
+                        <h2>Europe</h2>
+                        <div class="ContactAddress">
+                            54, Rue Louis Deshayes, 60110,<br />
+                            Meru, FRANCE
+                
+              <br />
+                            <span class="title">Telephone:</span><span class="details"> 001 3455 34887</span><br />
+
+                        </div>
+                    </div>
+                    <div id="AddIPondi" class="locationDetails reverseskew">
+
+                        <h2>India - Puducherry</h2>
+                        <div class="ContactAddress">
+                            #37, Kamaraj Salai, VVP Nagar,<br />
+                            Thathanchavady
+                <br />
+                            Puducherry - 605 009
+                <br />
+                            <span class="title">Telephone:</span><span class="details"> 001 3455 34887</span><br />
+
+                        </div>
+                    </div>
+                    <div id="AddIChennai" class="locationDetails reverseskew">
+
+                        <h2>India - Chennai</h2>
+
+                        <div class="ContactAddress">
+                            93/43, 1st Avenue,<br />
+                            Indra Nagar, Adyar,
+                <br />
+                            Chennai - 600020
+                <br />
+                            <span class="title">Telephone:</span><span class="details"> 001 3455 34887</span><br />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="MapContentarea reverseskew">
+                    <div id="ContactMap">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+<div class="cycle"></div>
+
+<script type="text/javascript">
+    $(document).ready(function ($) {
+        $('.cycle').cyclotron();
+        $("#parentslide").mCustomScrollbar({
+
+            horizontalScroll: true,
+            theme: "light",
+            autoHideScrollbar: false,
+            scrollButtons: {
+                enable: true
+            }
+        });
+
+        $('.bg').fadeIn(400);
+        $(".mCSB_container").animate({ left: "-606px" }, 600);
+        $(".mCSB_dragger").animate({ left: "310px" }, 600);
+    });
+    $(window).load(function () {
+        $('.Contactbg').fadeIn(400);
+    });
+    var map;
+    if ($("#ContactMap").length > 0) {
+
+        loadMap(40.74727, -73.98006, 'North America', 'AddNAmerica');
+        //if ($("#ContactMap").length > 0) {
+        //    alert('same');
+        //    $('.mainrightPanel').animate({ 'z-index': "-5" });
+        //}
+        //else {
+        //    alert('other');
+        //    $('.mainrightPanel').animate({ 'z-index': "3" });
+        //}
+
+    }
+    function loadMap(Lati, Long, locat, div) {
+        $(".mCSB_container").css("left", "0px");
+        $(".mCSB_dragger").css("left", "0px");
+        $('.locationDetails h2').css({ color: "#000000" });
+        $('.locationDetails h2 img').remove();
+        $('#' + div + ' h2').css({ color: "#1F98D9" });
+        // $('#' + div + ' h2 img').css({ display: 'block' });
+        $('#' + div + ' h2').prepend('<img src="Images/' + div + '.png" />');
+        $(".mCSB_container").animate({ left: "-613px" }, 900);
+        $(".mCSB_dragger").animate({ left: "307px" }, 900);
+        var map = new GMaps({
+            el: '#ContactMap',
+            lat: Lati,
+            lng: Long,
+            zoom: 14,
+            zoomControl: true,
+            zoomControlOpt: {
+                style: 'SMALL',
+                position: 'TOP_LEFT'
+            },
+            panControl: false,
+        });
+
+        map.addMarker({
+            lat: Lati,
+            lng: Long,
+            title: locat,
+            infoWindow: {
+                content: '<p>' + locat + '</p>'
+            }
+        });
+
+
+        //var map = new GMaps({
+        //    el: '#ContactMap',
+        //    lat: 51.5073346,
+        //    lng: -0.1276831,
+        //});
+
+
+    }
+</script>

@@ -1,0 +1,166 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <link href="Style/Style1.css" rel="stylesheet" />
+    <link href="Style/fonts.css" rel="stylesheet" />
+    <link href="Style/Gallery/supersized.css" rel="stylesheet" />
+    <link href="Style/Gallery/supersized.shutter.css" rel="stylesheet" />
+    <script src="Script/jquery-1.7.1.js"></script>
+    <script src="Script/application.js"></script>
+    <script src="Script/Gallery/supersized.3.2.7.min.js"></script>
+    <script src="Script/Gallery/supersized.shutter.min.js"></script>
+		<script src="Script/loadxmldoc.js"></script>
+    <title>IHorse Technologies</title>
+</head>
+<body>
+
+    <div class="MainFrame">
+        <header>
+            <nav>
+                <ul>
+										<li><a rel="external" data-page-name="about_us" class="top_nav_link" href="about_us.html">ABOUT US</a></li>
+										<li><a rel="external" data-page-name="services" class="top_nav_link" href="services.html">SERVICES</a></li>
+										<li><a rel="external" data-page-name="products" class="top_nav_link" href="products.html">PRODUCTS</a></li>
+										<li><a rel="external" data-page-name="programs" class="top_nav_link" href="programs.html">PROGRAMS</a></li>
+										<li><a rel="external" data-page-name="careers" class="top_nav_link" href="careers.html">CAREERS</a></li>
+										<li><a rel="external" data-page-name="news_events" class="top_nav_link" href="news_events.html">NEWS & EVENTS</a></li>
+										<li><a rel="external" data-page-name="blog" class="top_nav_link" href="blog.html">BLOG</a></li>
+										<li><a rel="external" data-page-name="contacts" href="javascript:void(0);">CONTACTS</a></li>
+
+								</ul>
+            </nav>
+
+        </header>
+        <div class="content"> </div>
+        
+        <div id="controls-wrapper" class="load-item">
+		<div id="controls">
+			<ul id="slide-list"></ul>
+		</div>
+	</div>
+    </div>
+    <div class="fixedPanels">
+        <div class="mainleftPanel">
+            <div class="logo1">
+                <img id="ihorseLogo" src="Images/home-logo.png" />
+            </div>
+            <div class="logo2">
+                <img src="Images/horse%20watermark.png" />
+            </div>
+        </div>
+        <div class="ServicesLink">
+            <ul>
+                <li>
+                    <img src="Images/service%20icons/1webbasedapp.png" />
+                </li>
+                <li>
+                    <img src="Images/service%20icons/2portaldevelopment.png" /></li>
+                <li>
+                    <img src="Images/service%20icons/3reengineering.png" />
+                </li>
+                <li>
+                    <img src="Images/service%20icons/4maintenanceandsupport.png" />
+                </li>
+                <li>
+                    <img src="Images/service%20icons/5testing.png" />
+                </li>
+                <li>
+                    <img src="Images/service%20icons/6mobileappdevelopment.png" />
+                </li>
+                <li>
+                    <img src="Images/service%20icons/7ITPlanningNetworkArchitecture.png" />
+                </li>
+                <li>
+                    <img src="Images/service%20icons/8ITConsultingIntegration.png" /></li>
+                <li>
+                    <img src="Images/service%20icons/9ITSupportServices.png" /></li>
+                <li>
+                    <img src="Images/service%20icons/10Monitoring.png" /></li>
+                <li>
+                    <img src="Images/service%20icons/11WebDesigning.png" /></li>
+                <li>
+                    <img src="Images/service%20icons/12PackagingDesigning.png" /></li>
+                <li>
+                    <img src="Images/service%20icons/13PrototypeDesigning.png" /></li>
+                <li>
+                    <img src="Images/service%20icons/14MarketingCollaterals.png" /></li>
+                <li>
+                    <img src="Images/service%20icons/15animation.png" />
+                </li>
+            </ul>
+        </div>
+        <div class="mainrightPanel">
+            <a id="prevslide" class="load-item"></a>
+	<a id="nextslide" class="load-item"></a>
+        </div>
+    </div>
+    <div class="DivShutter">
+        <div class="LeftShutter">
+
+            <img id="loadingIhorse" src="Images/loading- logo.png" />
+            <!--<span>Find us in social networks</span>-->
+
+        </div>
+
+        <div class="RightShutter">
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript">
+        //Gallery Code Start
+      /*  jQuery(function ($) {
+
+            $.supersized({
+
+                // Functionality
+                slide_interval: 3000,		// Length between transitions
+                transition: 3, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+                transition_speed: 700,		// Speed of transition
+
+                // Components							
+                slide_links: 'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+                slides: [			// Slideshow Images
+                                                    { image: 'Images/banner-design-bg.jpg', title: 'Image Credit: Maria Kazvan' },
+                                                    { image: 'Images/banner-mannaged-bg.jpg', title: 'Image Credit: Maria Kazvan' },
+                                                    { image: 'Images/banner-mobile-bg.jpg', title: 'Image Credit: Maria Kazvan' },
+                                                    { image: 'Images/banner-web-bg.jpg', title: 'Image Credit: Colin Wojno' }
+
+                ]
+
+            });
+        });
+
+        //Gallery Code Ends*/
+
+
+
+
+        $('#loadingIhorse').click(function () {
+            //alert('hi');
+            //$('#content1').stop().animate({ width: '0px', height: '' + height + 'px', marginLeft: '' + margin + 'px', opacity: '0.0' }, { duration: 500 });
+            $('.LeftShutter').stop().animate({ 'left': '-1525px' }, { duration: 900 });
+            $('.RightShutter').stop().animate({ 'left': '1363px' }, { duration: 900 });
+        });
+
+
+        $('#ihorseLogo').click(function () {
+            $('.LeftShutter').stop().animate({ 'left': '-577px' }, { duration: 900 });
+            $('.RightShutter').stop().animate({ 'left': '527px' }, { duration: 900 });
+            //$('.RightShutter').stop().animate({ 'background-color': '#000000' }, {
+            //    duration: 900, complete: function () {
+            //        $('.RightShutter').stop().animate({ 'margin-left': '35%' }, { duration: 900 });
+            //        alert('s');
+            //    }
+            //});
+        });
+
+        $('.ServicesLink img').hover(function () {
+            $(this).stop().animate({ 'margin-left': '12px' }, { duration: 300 })
+        }, function () {
+            $(this).stop().animate({ 'margin-left': '0px' }, { duration: 300 })
+        });
+    </script>
+</body>
+</html>

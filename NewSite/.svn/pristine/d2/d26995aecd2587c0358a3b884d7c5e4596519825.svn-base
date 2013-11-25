@@ -1,0 +1,127 @@
+<style>
+
+input[type="text"], input[type="email"], textarea{
+    
+    padding: 5px;   
+    border: 1px solid #DDDDDD;
+    
+    /*Applying CSS3 gradient*/
+    background: -moz-linear-gradient(center top , #FFFFFF,  #EEEEEE 1px, #FFFFFF 20px);    
+    background: -webkit-gradient(linear, left top, left 20, from(#FFFFFF), color-stop(5%, #EEEEEE) to(#FFFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFBFB', endColorstr='#FFFFFF');
+    
+    /*Applying CSS 3radius*/   
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+    /*Applying CSS3 box shadow*/
+    -moz-box-shadow: 0 0 2px #DDDDDD;
+    -webkit-box-shadow: 0 0 2px #DDDDDD;
+    box-shadow: 0 0 2px #DDDDDD;
+
+}
+input[type="text"]:hover, input[type="email"]:hover, textarea:hover
+{
+    border:1px solid #cccccc;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus
+{
+    box-shadow:0 0 2px #FFFE00;
+}
+
+.upload_form_container{
+  //float: left;
+  //position: absolute;
+  //width: 100%;
+}
+.upload_form{
+  //float: left;
+  margin-left: 35%;
+  //width: 100%;
+}
+.upload_form input[type="text"], .upload_form input[type="email"]{
+  width: 200px;
+}
+.upload_form .skill_set_input{
+  width: 200px;
+  height: 40px;
+}
+.upload_form .resume_input{
+  width: 200px;
+  height: 100px;
+}
+.upload_form_container span{
+  //width: 100%;
+  //float: left;
+}
+.upload_form label{
+  float: left;
+  width: 19%;
+}
+.custom_captcha_show{
+  font-family: captcha !important;
+  font-size: 40px !important;
+  margin: 25px 0 8px 0;
+}
+.custom_captcha_reload{
+  cursor: pointer;
+  position: absolute;
+  right: 0px;
+  width: 55px !important;
+  bottom: 13px;
+  color: #1D97D8;
+}
+</style>
+
+
+<div>
+  <div class='upload_form_container'>
+    <form class='upload_form' name='upload_form'>
+      <span>
+        <input type='text' class="input" name='name' placeholder="Name"/>
+      </span>
+      <span>
+        <input type='email' class="input" name='email' placeholder="E-mail" />
+      </span>
+      <span>
+        <input type='text' class="input" name='phone' placeholder="Mobile Number" />
+      </span>
+      <div>
+        <input type='radio' class="input" name='experience' />
+        <em>Fresher</em>
+        <input type='radio' class="input" name='experience' />
+        <em>2-4years</em>
+        <input type='radio' class="input" name='experience' />
+        <em>4-6years</em>
+        <input type='radio' class="input" name='experience' />
+        <em>6-8years</em>
+      </div>
+      <span>
+        <textarea rows='5' cols='20' class="input skill_set_input" name='skill_set' placeholder="Skill Set" ></textarea>
+      </span>
+      <span>
+        <textarea rows='5' cols='20' class="input resume_input" name='resume' placeholder="Resume (Cut and paste your resume)" ></textarea>
+      </span>
+
+      <p style="width: 257px;position: relative;top: 8px;">
+        <span class="custom_captcha_show" ></span>
+        <span class="custom_captcha_reload" style="">Reload</span>
+        <input type="hidden" class="custom_captcha_hidden" />
+      </p>
+      
+      <span>
+        <input type="text" class="captcha_value" name="captcha_value" placeholder="Enter above text" />
+        <input type='submit' value='Submit'>
+      </span>
+    </form>
+  </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        assign_captach_value();
+        $(".custom_captcha_reload").click(function () {
+            assign_captach_value();
+        });
+    });
+</script>

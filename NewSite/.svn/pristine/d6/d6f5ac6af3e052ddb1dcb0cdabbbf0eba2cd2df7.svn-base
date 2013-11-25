@@ -1,0 +1,21 @@
+<title>IHorse Products</title>
+<div class="whole-container">
+	<div class="container">
+		<div class="inner-container">
+			<div class="about_img">
+				<img src="/Images/producticon.png" alt="Smiley face" class="products">
+				<h1 class="servise_h1 products"></h1>
+			</div>
+			<div class="about_content">
+				<h3 class="top_head"></h3>
+				<p class="bottom_head"></p>
+				
+			</div>
+		</div>
+	</div>
+	<div class="container_bottom">
+		<div class="inner_container_bottom product">
+			<ul class="ser_container_ul"></ul>
+		</div>
+	</div>  
+</div>  

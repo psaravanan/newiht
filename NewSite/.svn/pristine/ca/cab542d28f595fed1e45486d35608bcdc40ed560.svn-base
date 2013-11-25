@@ -1,0 +1,22 @@
+<title>IHorse Careers</title>
+<div class="whole-container">
+	<div class="container">
+		
+		<div class="inner-container">
+			<div class="about_img">
+				<img src="/Images/career.png" alt="Smiley face" class="career">
+				<h1 class="servise_h1 career"></h1>
+			</div>
+			<div class="about_content">
+				<h3 class="top_head"></h3>
+				<p class="bottom_head"></p>
+				
+			</div>
+		</div>
+	</div>
+	<div class="container_bottom">
+		<div class="inner_container_bottom career">
+			<ul class="ser_container_ul"></ul>
+		</div>
+	</div>  
+</div>  

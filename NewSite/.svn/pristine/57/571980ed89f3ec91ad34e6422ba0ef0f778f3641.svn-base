@@ -1,0 +1,230 @@
+;(function ( $, window, document ) {
+
+  "use strict";
+  var click_this_element, top_menu_page_name,top_menu_xml_url,service_link_xml_url,
+     service_link_page_name, service_link_sibling_index, service_link_item_index;
+
+  var pluginName = "pusher",
+    defaults = {
+      watch: "a",
+      initialPath: window.location.pathname,
+      before: function(done) {
+        console.log("before in plugin");
+        console.log($(this));
+        done();
+      },
+      handler: function() {
+      },
+      after: function() {
+      },
+      fail: function() {
+        window.alert("Failed to load " + this.state.path);
+      },
+      onStateCreation: function(state, elem) {
+      }
+    };
+
+  function Plugin(element, options) {
+    this.element = element;
+    this.options = $.extend({}, defaults, options);
+    this._defaults = defaults;
+    this._name = pluginName;
+    this.init();
+  }
+
+  Plugin.prototype = {
+
+    init: function() {
+      
+      var self = this;
+      
+      if (!history.pushState) {
+        return;
+      }
+      
+
+      console.log("from plugins");
+      console.log(this);
+      console.log(self.options.initialPath);
+
+
+      //create the initial state
+      var initialState = createState({
+        path: self.options.initialPath,
+        path_class: $(this).attr('attr')
+      }, self.options.onStateCreation);
+      
+      history.replaceState(initialState, null, initialState.path);
+      
+      //click event
+      $(self.element).on('click', self.options.watch, function (e) {
+        e.preventDefault();
+
+          click_this_element = $(this);
+
+          if( $(this).hasClass("top_nav_link") ){
+            api.playToggle();
+            $('#contentarea').empty();
+            $('#controls-wrapper').hide();
+            top_menu_xml_url = "/Site/Xml/all_pages.xml";
+            top_menu_page_name = $(this).data("page-name");
+          } else if( $(this).hasClass("check_service_detail") ){
+            api.playToggle();
+            $('#contentarea').empty();
+            $('#controls-wrapper').hide();
+            service_link_xml_url = "/Site/Xml/all_pages.xml";
+            service_link_page_name = $(this).data("page-name");
+            service_link_sibling_index = $(this).data("sibling-index");
+            service_link_item_index = $(this).data("item-index");
+            if (service_link_page_name == 'about_us' && (service_link_sibling_index == '3' || service_link_sibling_index == '2')) {
+                if (sibling_index == '2') {
+                    BindMilestone();
+                }else{
+                    BindTeam();
+                }
+                return false;
+            }
+          } else if($(click_this_element).hasClass("check_service_description")){
+            var xml_url = "/Site/Xml/all_pages.xml";
+            var page_name = $(this).data("page-name");
+            var sibling_index = $(this).data("sibling-index");
+            var item_index = $(this).data("item-index");
+            if (page_name == 'about_us' && (sibling_index == '3' || sibling_index == '2')) {
+                if (sibling_index == '2') {
+                    BindMilestone();
+                }
+                else {
+                    BindTeam();
+                }
+            } else {
+                showDescription(page_name, sibling_index, item_index);
+            }
+            return false;
+          }
+
+        
+        var state = createState({
+          path: $(this).attr('href'),
+          this_path: $(this),
+          path_class: $(this).attr("class"),
+          elem: $(this)
+        }, self.options.onStateCreation);
+        
+        window.console.log("push", state);
+        run(self, state, true);
+      });
+      
+      //popstate event
+      window.addEventListener('popstate', function(e) {
+        window.console.log("pop", e.state);
+        run(self, e.state);
+      });
+       
+    }
+    
+  };
+  
+  var createState = function(params, fn) {
+    var state = {};
+    params = params || {};
+    state.path = params.path;
+    state.path_class = params.class;
+    state.time = new Date().getTime();
+    if(fn) {
+      fn(state, params.elem);
+    }
+    return state;
+  };
+  
+  var run = function(plugin, state, push) {
+    
+    if(!state) {
+      return;
+    }
+    
+    window.console.log("run", state);
+    
+    var context = {
+      state: state,
+      this_element: state.path_class,
+      get: function(query) {
+        return get(context.res, query);
+      },
+      updateText: function(query) {
+        var el = $(query);
+        this.get(query).each(function(i) {
+          var txt = $(this).text();  
+          el.eq(i).text(txt);
+        });
+      },
+      updateHtml: function(query) {
+        var el = $(query);
+        this.get(query).each(function(i) {
+          var cnt = $(this).contents();  
+          el.eq(i).html(cnt);
+        });
+      }
+    };
+
+    var done = function() {
+      $.ajax({
+        type: 'GET',
+        url: state.path
+      }).done(function (res) {
+        context.res = res;
+        if(push) {
+          history.pushState(state, null, state.path);
+        }
+        plugin.options.handler.apply(context);
+        
+
+        console.log("$(click_this_element)");
+        console.log($(click_this_element));
+        if($(click_this_element).hasClass("top_nav_link")){
+            if (top_menu_page_name == 'contacts') {
+                $("#ContactParentslide").delay(600).animate({ left: "17.3%" }, 600);
+            }else{
+                feedDataFromXML(top_menu_xml_url, top_menu_page_name);
+                doslideup();
+            }
+        } else if( $(click_this_element).hasClass("check_service_detail") ){
+            $("#parentslide").mCustomScrollbar({
+                horizontalScroll: true,
+                theme: "light",
+                autoHideScrollbar: false,
+                scrollButtons: {
+                    enable: true
+                }
+            });
+            $('.bg').fadeIn(400);
+            $(".mCSB_container").animate({ left: "-606px" }, 600);
+            $(".mCSB_dragger").animate({ left: "310px" }, 600);
+            selectSibling(service_link_page_name, service_link_sibling_index, service_link_item_index);
+            $("#parentslide").delay(600).animate({ left: "17.3%" }, 600);
+        }
+
+
+      }).fail(function () {
+        plugin.options.fail.apply(context);
+      }).always(function () {
+        plugin.options.after.apply(context);
+      });
+    };
+  
+    plugin.options.before.apply(context, [done]);
+  };
+
+  var get = function(data, query) {
+    var html = $("<root>").html(data);
+    var res = html.find(query);
+    window.console.log(res);
+    return res;
+  };
+
+  $.fn[pluginName] = function (options) {
+    if (!$.data(document, "plugin_" + pluginName)) {
+      $.data(document, "plugin_" + pluginName, new Plugin( this, options ));
+    }
+  };
+
+})( jQuery, window, document );

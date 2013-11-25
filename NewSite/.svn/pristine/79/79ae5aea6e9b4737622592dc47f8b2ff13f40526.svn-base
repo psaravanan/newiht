@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Page name="Home">
+  <Header>
+    <!--//these Links are fixed-->
+    <h1></h1>
+    <h2></h2>
+    <h3></h3>
+    <p></p>
+    <logo></logo>
+    <image></image>
+  </Header>
+  <Links>
+    <!--//These link can be multipal-->
+    <link displayName="" tooltip="" navigatingUrl="">
+      <li tooltip="" navigatingUrl="">Link1</li>
+      <li tooltip="" navigatingUrl="">Link1</li>
+      <li tooltip="" navigatingUrl="">Link1</li>
+      <li tooltip="" navigatingUrl="">Link1</li>
+    </link>
+    <link displayName="" tooltip="" navigatingUrl="">
+      <li tooltip="" navigatingUrl="">Link1</li>
+      <li tooltip="" navigatingUrl="">Link1</li>
+      <li tooltip="" navigatingUrl="">Link1</li>
+      <li tooltip="" navigatingUrl="">Link1</li>
+    </link>
+
+  </Links>
+
+  <baseLinks displayName="">
+    <div>
+      <!--//These link can be multipal-->
+      <h1></h1>
+      <h2></h2>
+      <h3></h3>
+      <p ></p>
+    </div>
+
+  </baseLinks>
+
+</Page>

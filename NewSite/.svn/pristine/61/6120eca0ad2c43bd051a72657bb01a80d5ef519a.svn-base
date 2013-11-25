@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<top_navigation>
+  	<page name="about_us">
+  		<header>
+  			<image>/Site/Images/assets/menus/2/original/aboutus-horse.png</image>
+  			<title>ABOUT US</title>
+  			<short_description>Consultant.Designer.Partner</short_description>
+  			<long_description>we are what you are looking for A solution provider to suit your uniqueness. Be it designing a customized IT solution, altering your existing applications or maintaining an existing product.</long_description>
+        <color>#7C7C7C</color>
+  		</header>
+  		<bottom>
+    			<menu>
+            <menu_name>History</menu_name>
+            <color>#7e7e7e</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/5/original/about-history.jpg</image>
+              <image>/Site/Images/assets/sublink_list/5/original/aboutus-title.png</image>
+              <image>/Site/Images/assets/sublink_list/5/original/history-bg.jpg</image>
+            </images>
+    				  <item url= "true">
+                <list_type>is_para</list_type>
+                <list_name>Started in 2007,iHorse...</list_name>
+                <list_para>Started in 2007,iHorse today is a one stop solution for all IT and business solutions for enterprises across multiple domains....</list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>History</title>
+                <description>we are what you are looking for A solution provider to suit your uniqueness. Be it designing a customized IT solution, altering your existing applications or maintaining an existing product –</description>
+              </item>
+    			</menu>
+    			<menu>
+            <menu_name>Mantra</menu_name>
+            <color>#7e7e7e</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/22/original/about-mantra.jpg</image>
+              <image>/Site/Images/assets/sublink_list/22/original/aboutus-title.png</image>
+              <image>/Site/Images/assets/sublink_list/22/original/mantra-bg.jpg</image>
+            </images>
+    				  <item url= "true">
+                <list_type>is_para</list_type>
+                <list_name></list_name>
+                <list_para>To help our customers achieve their business objectives through the latest in technology.
+To become an Employer of Choice. Provide all opportunities of growth and enrichment to our employees.
+Provide satisfactory returns to a...</list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Mantra</title>
+                <description>To help our customers achieve their business objectives through the latest in technology.
+
+To become an Employer of Choice. Provide all opportunities of growth and enrichment to our employees.
+
+Provide satisfactory returns to all Stakeholders
+
+“And Together with our Customers, Stakeholders and Employees , be the Best in what We do.”</description>
+              </item>
+    			</menu>
+    			<menu>
+            <menu_name>Milestone</menu_name>
+            <color>#7e7e7e</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/23/original/about-milestone.jpg</image>
+              <image>/Site/Images/assets/sublink_list/23/original/aboutus-title.png</image>
+              <image>/Site/Images/assets/sublink_list/23/original/milestone.jpg</image>
+            </images>
+    				  <item url= "true">
+                <list_type>is_para</list_type>
+                <list_name></list_name>
+                <list_para>In less than a decade, iHorse has covered a long, arduous but successful journey. But this is only the beginning. Here is a glimpse of what we have achieved so far.  </list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title></title>
+                <description></description>
+              </item>
+    			</menu>
+    			<menu>
+            <menu_name>Team</menu_name>
+            <color>#7e7e7e</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/24/original/about-team.jpg</image>
+              <image>/Site/Images/assets/sublink_list/24/original/aboutus-title.png</image>
+              <image>/Site/Images/assets/sublink_list/24/original/events-bg.jpg</image>
+            </images>
+    				  <item url= "false">
+                <list_type>is_link</list_type>
+                <list_name>Visionaries</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/assets/sublink_list/24/original/mantra-bg.jpg</inner_image>
+                <title>Team</title>
+                <description>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#x27;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</description>
+              </item>
+    				  <item url= "false">
+                <list_type>is_link</list_type>
+                <list_name>Executives</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title></title>
+                <description></description>
+              </item>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>Consultants</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Consultants</title>
+                <description>Our consultants are educationally and professionally highly qualified. Above 95% of the resources at iHorse are either graduates or post-graduates in their respective technical lines.80% of the consultants are already experienced in their respective fields of technology.
+Being a focused IT consulting firm, iHorse hires the best from all over the world to get &quot;just the right&quot; people on board. iHorse team is a mix of people from various countries and nationalities.
+Our consultants have in-depth experience in their respective fields and have handled major clients in their current and previous employments. 
+
+</description>
+              </item>
+    			</menu>
+  		</bottom>
+  	</page>
+  	<page name="services">
+  		<header>
+  			<image>/Site/Images/assets/menus/3/original/service.png</image>
+  			<title>SERVICES</title>
+  			<short_description>We have built our services around our strength “the Technology”.</short_description>
+  			<long_description>iHorse has always believed in developing applications by collaborating closely with clients, since their domain expertise is vital. Every technology practice is a services division for iHorse</long_description>
+        <color>#DA0855</color>
+  		</header>
+  		<bottom>
+    			<menu>
+            <menu_name>WEB TECHNOLOGY</menu_name>
+            <color>#1f98d9</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/6/original/service-wb_title.png</image>
+              <image>/Site/Images/assets/sublink_list/6/original/WEB_TECH-TITLE.png</image>
+              <image>/Site/Images/assets/sublink_list/6/original/service_web.jpg</image>
+            </images>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>Web Based Application</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Web Based Application</title>
+                <description>iHorse Technologies offers  you  a full range of web site application development services right from requirements gathering and definition through to the delivery and deployment of web solutions. 
+Our Web Application development professionals bring years of experience in all major tools/frameworks to develop commercial Web Application to meet both the business and technical requirements of any project. 
+Integration of web analytics tools into your website, payment gateways, large  scale web based apps, load balancing, architectural designing  or just development and hosting .
+ iHorse Technologies can offer the right solution for your requirements.</description>
+              </item>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>Portal development</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Portal development</title>
+                <description>In today’s world, where businesses are done without any geographical boundaries, the portal has become the known gateway for the users across the  world wide web. The portal today has become the first point of touch with prospective customer. Impressions are formed and decisions are taken on basis of the look and feel of a portal.
+Web Portal Development is a multi-dimensional activity that involves proficiency at many levels whether it is architecture design, GUI design, DB planning, coding or middle tier integration.
+At iHorse Technologies,  we design and develop web portals for our global clients in various business verticals. Our portal services include portal development for several industries for B2B (Business to Business) portals, B2C (Business to Consumer) portals, ecommerce portal development and Portal Maintenance, basically offering end to end solutions with its vast experience to build interactive and efficient portals for its clients. </description>
+              </item>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>Application Reengineering</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Application Reengineering</title>
+                <description>Changes especially in software is norm. Its doesn’t always make business sense to recreate software from scratch to catch up with the changing technologies and requirements. That’s where re-engineering plays a big role. Application re-engineering ensures up to date processes and can provide booster dose to remain in competition with others. CMS has changed complete scenario nowadays.
+
+At iHorse reengineering  is done in a structural and a phased process. It covers the entire life cycle of the application where the performance of the application is consistently monitored for any gaps. Our Re-engineering Services follow strong planning and execution of each phase, reduces the risk factor to the minimum, apart from rapidly and effectively working on the architecture your application. Our extensive consulting and dexterous analytical skills ensure a perfect re-engineered solution for you. 
+
+iHorse Reengineering  solutions include lower version to newer version migration besides, migration from one platform to another like Asp.net to php ,php to java, java to Asp.net , or Mysql to Oracle, Access to Sql server.
+</description>
+              </item>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>Maintenance and Support</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Maintenance and Support</title>
+                <description>Preventative maintenance is performed for the purpose of preventing problems before they occur. This is the process of changing software to improve its future maintainability or to provide a better basis for future enhancements.
+The preventative change is usually initiated from within the maintenance organization with the intention of making programs easier to understand and hence facilitate future maintenance work. Preventive change does not usually give rise to a substantial increase in the baseline functionality.</description>
+              </item>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>Testing</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Testing</title>
+                <description>iHorse Technologies helps in bringing out robust, reliable, secure, and user-friendly software products by testing the software through Life cycle testing for both functional and non-functional requirements. 
+
+We follow processes to build an offshore testing plan for our clients and execute them successfully. We follow rigorous testing procedures &amp; standards, and work in a structured environment. 
+
+Our Team Not only helps you to assess your current testing practices and processes, but also improve the quality of the software developed, identify testing strategies, develop test plans and test cases, manage and execute tests, and measure test results.
+</description>
+              </item>
+    			</menu>
+    			<menu>
+            <menu_name>MOBILE APP DEVELOPMENT</menu_name>
+            <color>#99b23f</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/7/original/service-mobile_title.png</image>
+              <image>/Site/Images/assets/sublink_list/7/original/MOBILE_APP-TITLE.png</image>
+              <image>/Site/Images/assets/sublink_list/7/original/service_mobile.jpg</image>
+            </images>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>Android</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Android</title>
+                <description>Android is perhaps the fastest-growing mobile OS providing a world-class platform for creating apps and games as well as an open marketplace for distributing to them instantly. It has the largest installed base of any mobile platform and powers hundreds of millions of mobile devices in more than 190 countries around the world. Every day another million users power up their Android devices for the first time and start looking for apps, games, and other digital content. 
+More than 1.5 billion apps and games from Google Play each month by android users.
+Android is a favorite with corporates too. It provides a single application model that lets them deploy their apps broadly to hundreds of millions of users across a wide range of devices—from phones to tablets and beyond. Another popular feature is its ability to automatically adapt a UI to look its best on each device, while giving as much control as required over the UI on different device types. 
+With our expertise in Android combined with its inherent benefits, iHorse offers you development, testing and porting of attractive and user friendly apps that will give just the right boost to your business at the right price.
+Be it a simple or complex business or an enterprise software development iHorse covers it all. Our team has expertise in technologies like Android Software Development Kit, Location–based Service APIs, Bluetooth, EDGE, 3G, and Wi-Fi, touch screens, GPS, accelerometer, magnetometer, Android Security Architecture etc. to build you the best apps in Android platform.
+iHorse has till date developed Android based apps across varied industries such as Insurance, Tourism, Security, Education, Social Networking etc.
+Our offerings in Android include:
+Android Services 
+Custom Android Application
+Mobile business software creation
+Third-party libraries building
+Multimedia and security mobile solutions
+Bluetooth, Wi-Fi and GPS support
+Communication mobile application development
+</description>
+              </item>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>iOS</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>iOS</title>
+                <description>iHorse is a specialist in Mobile Application Development offering quality Consultancy in both offshore and onsite Mobile Application Development that ensure maximum ROI. Our skilled and experienced team offer total solutions, right from initial concept design to architecting using the right technology, development and launching of the applications on handsets in all major markets. Our areas of expertise are: iOS Mobile Application Development Android Mobile Application Development BlackBerry Mobile Application Development Windows Mobile Application Development</description>
+              </item>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>Blackberry</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Blackberry</title>
+                <description>iHorse is a specialist in Mobile Application Development offering quality Consultancy in both offshore and onsite Mobile Application Development that ensure maximum ROI. Our skilled and experienced team offer total solutions, right from initial concept design to architecting using the right technology, development and launching of the applications on handsets in all major markets. Our areas of expertise are: iOS Mobile Application Development Android Mobile Application Development BlackBerry Mobile Application Development Windows Mobile Application Development</description>
+              </item>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>Windows</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Windows</title>
+                <description>iHorse is a specialist in Mobile Application Development offering quality Consultancy in both offshore and onsite Mobile Application Development that ensure maximum ROI. Our skilled and experienced team offer total solutions, right from initial concept design to architecting using the right technology, development and launching of the applications on handsets in all major markets. Our areas of expertise are: iOS Mobile Application Development Android Mobile Application Development BlackBerry Mobile Application Development Windows Mobile Application Development</description>
+              </item>
+    			</menu>
+    			<menu>
+            <menu_name>MANAGED SERVICE</menu_name>
+            <color>#af4d4d</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/8/original/service-managed_title.png</image>
+              <image>/Site/Images/assets/sublink_list/8/original/MANAGED-TITLE.png</image>
+              <image>/Site/Images/assets/sublink_list/8/original/service_managed.jpg</image>
+            </images>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>IT Planning &amp; Network ...</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>IT Planning &amp; Network Architecture</title>
+                <description>Our IT Planning and network architecture designs and implements high-quality networks that support your business needs. We design, maintain, and troubleshoot Internet, intranet, and extract connections, including local- and wide-area networks. Our offering also includes developing security and disaster recovery plans. 
+
+The main solutions offered by iHorse for IT planning and network architecture are: 
+Network Assessments
+Infrastructure Design
+Performance Optimization
+Project Management
+IT Lifecycle Management
+Cloud-based solutions</description>
+              </item>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>IT Consulting &amp; Integr...</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>IT Consulting &amp; Integration</title>
+                <description>iHorse’s IT consulting and integration provides you with a better understanding of your IT infrastructure thus identifying opportunities for increased efficiencies and lowering operational costs. These opportunities can then be converted to a clear action-plan towards a more effective IT department in tune with your business objectives.
+
+This objective is achieved through :
+Server/Desktop Virtualization
+Application Delivery
+Bandwidth Optimization
+Data &amp; Storage Management
+Network Security</description>
+              </item>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>IT Support Services</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>IT Support Services</title>
+                <description>iHorse offers end-to-end management of critical IT infrastructure thus delivering seamless support to our customers for their IT department. Our technical expertise and procedures ensure minimum downtime and optimal use of server, network and users equipment. Our IT support services alleviates the management burden on IT by freeing resources to improve reliability, efficiency and reducing costs.
+
+Server / Desktop Support
+Project Support
+Technology Staffing
+Procurement Support</description>
+              </item>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>24/7 Monitoring</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>24/7 Monitoring</title>
+                <description>Its always nice to have someone look after you. With iHorse Technologies’s Monitoring Management solutions you can be rest assured of your systems.
+Our monitoring systems constantly checks your server and services for uptime 24 hours a day, 7 days a week, 365 days a year. If a downed server or service is detected, we proactively begin working to correct the issue and bring everything back online. Preventing any mishaps, iHorse Monitoring Management makes sure that you business goes on and on without any hitches.
+Our main offerings are :
+
+IT Management Programs
+24/7 proactive and reactive support
+Backup and Disaster Recovery (BDR) Services
+Data Center Services
+</description>
+              </item>
+    			</menu>
+    			<menu>
+            <menu_name>DESIGN STUDIO</menu_name>
+            <color>#cf7814</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/9/original/service-design_title.png</image>
+              <image>/Site/Images/assets/sublink_list/9/original/DESIGN-TITLE.png</image>
+              <image>/Site/Images/assets/sublink_list/9/original/service-design.jpg</image>
+            </images>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>Web design</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Web design</title>
+                <description>In today’s world, where businesses are done without any geographical boundaries, the website has become the gateway for the users across the  world wide web. The website today has become the first point of touch with prospective customer. Impressions are formed and decisions are taken on basis of the look and feel of a website.
+
+We at iHorse Technologies knows the value of a good web site design, cool graphics that follows the trends. We pay a lot of attention to design and make sure our designers are constantly working to improve their knowledge and skill. Our experience and proficient team of design professionals enable us to offer complete website designing services. 
+
+From the stage of conceptualizing and creating the design of the website up to its complete execution, we pay attention to even the minutest of details while managing the project. We employ the latest web designing technologies and tools for our clients and design them in a manner, which successfully reaches out to its target audience and appeals to their senses.</description>
+              </item>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>Packaging design</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Packaging design</title>
+                <description>We may not judge a book by its cover but same can’t be said in case of a product. 
+
+Professionally designed and graphically pleasing Packaging not only attracts the customers’ eyeball but also makes your product stand out among the rest. This definitely translates to a boost in the sale of product. 
+
+At iHorse Design Studio, a team of professional graphic designers well equipped in talent, expertise, experience and infrastructure is dedicated to providing you with best of designs to give your product an edge. Our creators will take into consideration your unique identity and feel while creating customized solutions to you . These customized graphics will be submitted in different file formats so that they can be easily used for printing and allied in a different ways. 
+
+Our designers hold no bars to meet the needs of our customers and ensure that they are completely satisfied with the creatives. The projects we have successfully executed range from Packaging Design to IT And Software Packaging</description>
+              </item>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>Prototype design</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Prototype design</title>
+                <description>A prototype is an original model on which something is patterned. A prototype can range from a crude mock-up developed by the inventor to professionally designed virtual prototypes and/or fully-functioning working samples. We have excelled as a prototyping partner in ITES, regardless of the boundaries. Our main goal is to help customer bring their designs to market through fast and creative prototyping methods.</description>
+              </item>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>Brand Building Collate...</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Brand Building Collaterals</title>
+                <description>Its not only the first impression but every subsequent interaction that you client has with you and your products that helps forge a bond of a lifetime.
+
+We support you with Best first impression and each of the next too!!!!
+
+Logo becomes the identity of your company/product. A well conceived and well designed logo will mark your brand into the minds of your target audience.
+ 
+Corporate relations start with the right information material. We help you to build your sales literature, product offering brochures, flyers, and any other business communication material required to help you reach your customers. 
+
+We design the right business collateral for your product line, which will appeal to your customer&#x27;s taste and the same time conveying what you stand for. We will first study your concept and product line fully before beginning the design of your material to meet your expectations.
+</description>
+              </item>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>Animation</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Animation</title>
+                <description>If its is Animations that catches your fancy then iHorse Technologies is just the right place for you.
+Our production team comprises of extremely talented and experienced professionals  in  animation technology. Our team excels in both flash animation and traditional animation techniques. 
+Our Flash team who work their magic in specifically developing flash based animation. Our team delivers  excellence is the areas of pre-production activities, viz., character design, character turnaround model sheet, character key poses, character lyp-synch model sheet, character color model sheet, storyboard design, Anima tics and slug-in sheet.</description>
+              </item>
+    			</menu>
+  		</bottom>
+  	</page>
+  	<page name="products">
+  		<header>
+  			<image>/Site/Images/assets/menus/4/original/product_icon.png</image>
+  			<title>PRODUCTS</title>
+  			<short_description>Our Products</short_description>
+  			<long_description>And as much as we listen to our clients’ explicit requirements , we also heed to their unstated needs. BizHorse  Suite was formed with these latent needs in mind with keywords like Latest Technologies, Client’s Need, Scalability, Security, Ease of Operation and Availability of the technology.</long_description>
+        <color>#DA0855</color>
+  		</header>
+  		<bottom>
+    			<menu>
+            <menu_name>Lead Management System</menu_name>
+            <color>#da0855</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/10/original/product-LMS.png</image>
+              <image>/Site/Images/assets/sublink_list/10/original/products.png</image>
+              <image>/Site/Images/assets/sublink_list/10/original/products-bg.jpg</image>
+            </images>
+    				  <item url= "true">
+                <list_type>is_para</list_type>
+                <list_name></list_name>
+                <list_para>In midst of the complicated and arduous CRM available to the sales persons today, BizHorse LMS is a breeze to work on. Read more..</list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>LMS (Lead Management System)</title>
+                <description>In midst of the complicated and arduous CRM available to the sales persons today, BizHorse LMS is a breeze to work on. Simple in input and tracking but at the same time efficient  in its output and analysis, BizHorse can become your sales team’s best friend.</description>
+              </item>
+    			</menu>
+    			<menu>
+            <menu_name>Project Management System</menu_name>
+            <color>#da0855</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/11/original/product-PMS.png</image>
+              <image>/Site/Images/assets/sublink_list/11/original/products.png</image>
+              <image>/Site/Images/assets/sublink_list/11/original/products-bg.jpg</image>
+            </images>
+    				  <item url= "true">
+                <list_type>is_para</list_type>
+                <list_name></list_name>
+                <list_para>The BizHorse PMS assists in the organization and moderation of a project throughout its life cycle. Read more...</list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>PMS (Project Management System)</title>
+                <description>The BizHorse PMS assists in the organization and moderation of a project throughout its life cycle. Unlike traditional PMS available in the market, BizHorse is a dynamic system that can be attuned to your particular project environment.</description>
+              </item>
+    			</menu>
+    			<menu>
+            <menu_name>Human Resource Management System</menu_name>
+            <color>#da0855</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/12/original/product-HRMS.png</image>
+              <image>/Site/Images/assets/sublink_list/12/original/products.png</image>
+              <image>/Site/Images/assets/sublink_list/12/original/products-bg.jpg</image>
+            </images>
+    				  <item url= "true">
+                <list_type>is_para</list_type>
+                <list_name></list_name>
+                <list_para>Human Resources today has evolved from just the recruiting facility to handle various other important functions for the business. Read more..</list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>HRMS (Human Resource Management System)</title>
+                <description>Human Resources today has evolved from just the recruiting facility to handle various other important functions for the business. The right amalgamation of HR and IT can help ease of functioning in the department as well as give easy access to each employee to his/her personnel details.  Whatever the size of your business, BizHorse HRMS could be the right solution for you.</description>
+              </item>
+    			</menu>
+    			<menu>
+            <menu_name>Inter Employee Connectivity</menu_name>
+            <color>#da0855</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/13/original/product-IEC.png</image>
+              <image>/Site/Images/assets/sublink_list/13/original/products.png</image>
+              <image>/Site/Images/assets/sublink_list/13/original/products-bg.jpg</image>
+            </images>
+    				  <item url= "true">
+                <list_type>is_para</list_type>
+                <list_name></list_name>
+                <list_para>No man is an island and more so in today’s business context.Effortless interaction between various teams, functions and departments is the key to a smooth flow of work in an organization. Read more..</list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Intranet (Inter Employee Connectivity)</title>
+                <description>No man is an island and more so in today’s business context. Effortless interaction between various teams, functions and departments is the key to a smooth flow of work in an organization. BizHorse  Intranet allows for seamless communication between employees which is vital to the  fulfillment of their daily duties.</description>
+              </item>
+    			</menu>
+  		</bottom>
+  	</page>
+  	<page name="programs">
+  		<header>
+  			<image>/Site/Images/assets/menus/5/original/program_icon.png</image>
+  			<title>PROGRAMS</title>
+  			<short_description>Our Programs</short_description>
+  			<long_description>Two unique programs, especially created to make sure that your first steps lead to,nowhere else, but success. Easy to customize and implement , our programs make sure that your new venture – be is a company or a new product in an existing 
+company – is steered towards success with minimal risks.
+</long_description>
+        <color>#DA0855</color>
+  		</header>
+  		<bottom>
+    			<menu>
+            <menu_name>Minimum Viable Product</menu_name>
+            <color>#da0855</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/14/original/program-minimum.jpg</image>
+              <image>/Site/Images/assets/sublink_list/14/original/programs.png</image>
+              <image>/Site/Images/assets/sublink_list/14/original/program_bg.jpg</image>
+            </images>
+    				  <item url= "true">
+                <list_type>is_para</list_type>
+                <list_name></list_name>
+                <list_para>You have the idea, sure of its success but at the same time want to test the waters before taking the plunge?     Read more....
+
+</list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Minimum Viable Product</title>
+                <description>You have the idea, sure of its success but at the same time want to test the waters before taking the plunge?
+
+Then MVP is the way to go. In the concept popularized by Eric Ries, MVP or the  minimum viable product is a lean and agile development technique, where a new product, website or solution is developed with sufficient features to satisfy early adopters. We, at iHorse Technologies, understand and appreciate the relevance of this concept  and can offer development of your product on this technique. This keeps your resources of time and money invested into the product to the minimum requirement at each stage of its development. 
+
+Its only after the MVP is approved by your users and you are convinced that your product is in the right direction do we finalize the product. This final and complete set of features is designed and developed only after considering feedback from the product&amp;#x27;s initial users.The advantages of the MVP Approach are :
+Keeps your resources of time and money invested into the product to the minimum requirement at each stage of its development, thus providing greater flexibility. 
+Phase to Phase Market feedback will be collected and considered
+Helps understand your Target Market better
+The Final product evolving would be an amalgamation of your idea, feedback from initial user’s and the best of technologies – a sure shot recipe to success!!</description>
+              </item>
+    			</menu>
+    			<menu>
+            <menu_name>Launch 180</menu_name>
+            <color>#da0855</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/15/original/program-launch180.jpg</image>
+              <image>/Site/Images/assets/sublink_list/15/original/programs.png</image>
+              <image>/Site/Images/assets/sublink_list/15/original/program_bg.jpg</image>
+            </images>
+    				  <item url= "true">
+                <list_type>is_para</list_type>
+                <list_name></list_name>
+                <list_para>Taking baby steps to your “own” business?
+
+You have finally got going where you always wanted to go.Read More...
+
+</list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Launch 180</title>
+                <description>Taking baby steps to your “own” business?
+
+You have finally got going where you always wanted to go. But as you venture into establishing your own business, you realize that most of your time is being spent on mundane day to day operational activities rather than strategic action to further your business. Another big hurdle for you could be to source finance to convert your business ideas to workable products or services using technology
+
+Especially designed for Start ups, iHorse Technologies’ Launch 180 solution can help you set up the basics of your business. Partnering with Microsoft Bizspark, Third Ocean and Minden Gross, for the various requirements in starting up, Launch 180 designs the pathway for the first 180 days of your launch
+Advantages of Launch 180 :
+Fixed capital flow and outcomes - - lower cost development, deferred payment and/or mix of cash and equity for development
+The opportunity to focus on solving business problems and deferring focus on technology
+iHorse will bring in the MVP approach into your product development which will allow for customer feedback  from market at the minimum possible investment
+Makes your start-up attractive to investors  as you already have the market feedback - Reduced risk factor
+Specific tasks handled by experts in the field.
+</description>
+              </item>
+    			</menu>
+  		</bottom>
+  	</page>
+  	<page name="careers">
+  		<header>
+  			<image>/Site/Images/assets/menus/6/original/career_icon.png</image>
+  			<title>CAREERS</title>
+  			<short_description>A highly skilled professional service with a creative touch.</short_description>
+  			<long_description>Come explore the world through iHorse. An equal opportunity employee, iHorse provides you the opportunity to work on as 
+wide variety products across the world.</long_description>
+        <color>#DA0855</color>
+  		</header>
+  		<bottom>
+    			<menu>
+            <menu_name>Current Openings</menu_name>
+            <color>#da0855</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/16/original/career-current.jpg</image>
+              <image>/Site/Images/assets/sublink_list/16/original/career.png</image>
+              <image>/Site/Images/assets/sublink_list/16/original/career-bg.jpg</image>
+            </images>
+    				  <item url= "true">
+                <list_type>is_link</list_type>
+                <list_name>.Net Developer / Sr. D...</list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Current Openings</title>
+                <description>Job Code: IH - 004
+Job Location: Pondicherry
+Job Description: Position: .Net Developer / Sr. Dot Net Developer
+Work Location: Chennai (or) Pondicherry.
+Required Technical Skill’s: We are looking for excellent .NET /C# technologies developer for our offshore development center.</description>
+              </item>
+    			</menu>
+    			<menu>
+            <menu_name>Internship</menu_name>
+            <color>#da0855</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/17/original/career-internship.jpg</image>
+              <image>/Site/Images/assets/sublink_list/17/original/career.png</image>
+              <image>/Site/Images/assets/sublink_list/17/original/career-bg.jpg</image>
+            </images>
+    				  <item url= "true">
+                <list_type>is_para</list_type>
+                <list_name></list_name>
+                <list_para>No education is complete without hands on experience. And that is what iHorse&#x27;s Internship programs offer. From time to time, deserving candidates are offered internship at iHorse to better understand their field of study and h...</list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Internship</title>
+                <description>No education is complete without hands on experience. And that is what iHorse&#x27;s Internship programs offer. From time to time, deserving candidates are offered internship at iHorse to better understand their field of study and hone their skills. To know more , write to us at internship@ihorsetechnologies.com </description>
+              </item>
+    			</menu>
+    			<menu>
+            <menu_name>Upload Resume</menu_name>
+            <color>#da0855</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/18/original/upload_resume.jpg</image>
+              <image>/Site/Images/assets/sublink_list/18/original/career.png</image>
+              <image>/Site/Images/assets/sublink_list/18/original/career-bg.jpg</image>
+            </images>
+    				  <item url= "true">
+                <list_type>is_para</list_type>
+                <list_name></list_name>
+                <list_para>Upload your resume here. We shall revert to you when the right opportunity comes along.</list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>Upload Resume</title>
+                <description>Upload your resume here. We shall revert to you when the right opportunity comes along.</description>
+              </item>
+    			</menu>
+  		</bottom>
+  	</page>
+  	<page name="news_events">
+  		<header>
+  			<image>/Site/Images/assets/menus/7/original/news_icon.png</image>
+  			<title>News &amp; Events</title>
+  			<short_description>A highly skilled professional service with a creative touch.</short_description>
+  			<long_description>A solution provider creating solutions to suit your uriqueness. Be it designing a customized IT solution, altering your existing applications or maintaining an existing product - we are what you are looking for.</long_description>
+        <color>#DA0855</color>
+  		</header>
+  		<bottom>
+    			<menu>
+            <menu_name>News</menu_name>
+            <color>#da0855</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/19/original/news_news.jpg</image>
+              <image>/Site/Images/assets/sublink_list/19/original/news.png</image>
+              <image>/Site/Images/assets/sublink_list/19/original/events-bg.jpg</image>
+            </images>
+    				  <item url= "true">
+                <list_type>is_para</list_type>
+                <list_name></list_name>
+                <list_para>iHorsetechnologies enters into partnership with Sygnus Ventures to help build out Sygnus Digital Solutions.</list_para>
+                <inner_image>/Site/Images/photos/original/missing.png</inner_image>
+                <title>News</title>
+                <description>iHorsetech enters into partnership with Sygnus Ventures to help build out Sygnus Digital Solutions</description>
+              </item>
+    			</menu>
+    			<menu>
+            <menu_name>Events</menu_name>
+            <color>#da0855</color>
+            <images>
+              <image>/Site/Images/assets/sublinks/20/original/news-events.jpg</image>
+              <image>/Site/Images/assets/sublink_list/20/original/news.png</image>
+              <image>/Site/Images/assets/sublink_list/20/original/events-bg.jpg</image>
+            </images>
+    				  <item url= "true">
+                <list_type>is_image</list_type>
+                <list_name></list_name>
+                <list_para></list_para>
+                <inner_image>/Site/Images/assets/sublink_list/42/original/ihorse-invitation.jpg</inner_image>
+                <title>Events</title>
+                <description>ihorse moves to its new home at Pondicherry on September 9th, 2013.</description>
+              </item>
+    			</menu>
+  		</bottom>
+  	</page>
+  	<page name="blog">
+  		<header>
+  			<image>/Site/Images/assets/menus/8/original/blog.png</image>
+  			<title>BLOG</title>
+  			<short_description>A highly skilled professional service with a creative touch.</short_description>
+  			<long_description>A solution provider creating solutions to suit your uriqueness. Be it designing a customized IT solution, altering your existing applications or maintaining an existing product - we are what you are looking for.</long_description>
+        <color>#DA0855</color>
+  		</header>
+  		<bottom>
+    			<menu>
+            <menu_name></menu_name>
+            <color></color>
+            <images>
+              <image>/Site/Images/assets/sublinks/21/original/news_news.jpg</image>
+              <image>/Site/Images/avatars/original/missing.png</image>
+              <image>/Site/Images/pictures/original/missing.png</image>
+            </images>
+    			</menu>
+    			<menu>
+            <menu_name></menu_name>
+            <color></color>
+            <images>
+              <image>/Site/Images/assets/sublinks/25/original/news-events.jpg</image>
+              <image>/Site/Images/avatars/original/missing.png</image>
+              <image>/Site/Images/pictures/original/missing.png</image>
+            </images>
+    			</menu>
+  		</bottom>
+  	</page>
+</top_navigation>
+

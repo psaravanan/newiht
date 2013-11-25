@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Page name="Home">
+  
+  <BackgroundSection><!--//these are fiexed-->
+    <Section name="">
+      <bg tooltip="" >home.png</bg>
+      <logo tooltip="" ></logo>
+      <h1  tooltip=""></h1>
+      <h2  tooltip=""></h2>
+      <h3  tooltip=""></h3>
+      <p1 tooltip=""></p1>
+      <p2 tooltip=""></p2>
+      <objectimg tooltip=""></objectimg>
+    </Section>
+    <Section name="">
+      <bg tooltip="" >home.png</bg>
+      <logo tooltip="" ></logo>
+      <h1  tooltip=""></h1>
+      <h2  tooltip=""></h2>
+      <h3  tooltip=""></h3>
+      <p1 tooltip=""></p1>
+      <p2 tooltip=""></p2>
+      <objectimg tooltip=""></objectimg>
+    </Section>
+  </BackgroundSection>
+
+
+
+</Page>

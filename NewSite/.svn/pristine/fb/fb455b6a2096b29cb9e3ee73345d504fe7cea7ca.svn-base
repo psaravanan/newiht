@@ -1,0 +1,20 @@
+<title>iHorse About Us</title>
+<div class="whole-container">
+	<div class="container_top">
+		<div class="inner-container-top">
+			<div class="pagelogo">											
+				<h1>NEWS & EVENTS</h1>	
+				<!--<h1>ABOUT US hijack</h1>				
+				<img src="Images/aboutus-horse.png" alt="Smiley face"/>-->	
+				<img src="Images/service.png" alt="Smiley face"/>
+			</div>
+			<div class="content-top">
+				<h3 class="top_head">Consultant.Designer.Partner sdf sfsd sfs fasf sf sdf sfdsf sdfsf</h3>
+				<p class="bottom_head">we are what you are looking for A solution provider to suit your uniqueness. Be it designing a customized IT solution, altering your existing applications or maintaining an existing product.</p>
+			</div> 
+		</div> 
+	</div>
+	 <div class="container_bottom" id="bottomcontainer">
+
+	</div>
+</div>

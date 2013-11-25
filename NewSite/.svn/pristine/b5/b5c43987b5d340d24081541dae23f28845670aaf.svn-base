@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<globalSetting>
+  <TopNavigation>  <!--//these Links are fixed-->
+    <li tooltip="" navigatingUrl="">Link1</li>
+    <li tooltip="" navigatingUrl="">Link1</li>
+    <li tooltip="" navigatingUrl="">Link1</li>
+  </TopNavigation>
+  <ServiceNaigation><!--//these Links are fixed-->
+    <image tooltip="" navigatingUrl="">internet.png</image>
+    <image  tooltip="" navigatingUrl="">Link1</image>
+    <image tooltip="" navigatingUrl="">Link1</image>
+  </ServiceNaigation>
+</globalSetting>

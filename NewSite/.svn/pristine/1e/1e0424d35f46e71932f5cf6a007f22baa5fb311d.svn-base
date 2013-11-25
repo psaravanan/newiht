@@ -1,0 +1,40 @@
+<title>IHorse Milestone</title>
+<div>
+    <img class="bg" src="Images/milestone.jpg" />
+</div>
+<div id="parentslide" class="content details_page">
+    <div id="menubox" class="inner_strip_color" style="color:#7e7e7e">
+        <div id="menutitle">
+            <img id="imgtitle" class="reverseskew details_page_left_img" src="Images/aboutus-title.png">
+        </div>
+
+        <div class="reverseskew leftmenu details_page_left_list MapLeft">
+             <div style="padding-left: 83px"><a data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="about_us" data-item-index="0" data-sibling-index="0" href="#InnerPage.html">History</a></div>
+            <div style="padding-left: 68px"><a data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="about_us" data-item-index="0" data-sibling-index="1" href="#InnerPage.html">Mantra</a></div>
+            <div style="padding-left: 53px"><a data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="about_us" data-item-index="0" data-sibling-index="2" href="#InnerPage.html">Milestone</a></div>
+            <div style="padding-left: 38px"><a data-which-navigation="check_service_detail" class="check_service_detail" data-page-name="about_us" data-item-index="0" data-sibling-index="3" href="#InnerPage.html">Team</a>
+                <ul class="team_sublink">
+                    <li style="padding-left: 0px; margin-left: -33px;" onclick="bindteamSublinks('-670', '220')">- Visionary</li>
+                    <li style="padding-left: 0px; margin-left: -46px;" onclick="bindteamSublinks('-2722','493')">- Executive</li>
+                    <li style="padding-left: 0px; margin-left: -63px;" onclick="bindteamSublinks('-4585','775')">- Consultant</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="contentarea"  class="details_page_right" style="margin-left: -132px;">
+        <div class="whole_service_description">
+            <div class="reverseskew milestone_inner">
+           <img src="Images/milestone.png" class="" />
+        </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.Contactbg').fadeIn(400);
+        $("#MilestoneParentslide").animate({ left: "17.3%" }, 600);
+    });
+</script>
+

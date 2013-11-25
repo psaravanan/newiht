@@ -1,0 +1,617 @@
+$(document).keypress(function (e) {
+    if (e.which == 13) {
+        if ($("#gallery_content_botbutton .check_service_detail").length > 0) {
+            $("#gallery_content_botbutton .check_service_detail").click();
+        }
+    }
+});
+
+
+
+//$(".clsKeybord").on("mouseenter", function () {
+//$('#navigationShow')
+//  })
+//  .on("mouseleave", function () {
+//      $('#navigationShow').slideUp(1000);
+//  });
+
+
+
+//$('#navigationShow').slideDown({
+//    complete: function () {
+//        setTimeout($('#navigationShow').slideUp('slow'), 10000);
+//    }
+//}, 1000);
+
+
+$(document).ready(function () {
+    window.manualStateChange = true;
+
+    $(".iht_keyboard_navigation").click(function () {
+        var side = $(this).data("which-side");
+        arrow_navigation(side);
+    });
+    // Keyboard left or right arrow
+    $("body").keydown(function (e) {
+        if (e.keyCode == 37) { arrow_navigation("left"); } else if (e.keyCode == 39) { arrow_navigation("right"); }
+    });
+
+    $('#logo').click(function () {
+        window.location = "index.html";
+    });
+
+    $(".top_nav_link").click(function () {
+        $('#topnavigation li .top_nav_link').css('color', '#84837F');
+        $(this).css('color', 'white');
+
+        var which_navigation = $(this).data("which-navigation");
+        var this_url = url_addhash(this);
+        api.playToggle();
+        $('#contentarea').empty();
+        $('#controls-wrapper').hide();
+        var xml_url = "Xml/all_pages.xml";
+        var page_name = $(this).data("page-name");
+        // assign the previous and next page value in hidden field.
+        assign_prev_next_page(this);
+        $.ajax({
+            //url: $(t).attr("href"),
+            url: this_url,
+            success: function (data) {
+                //History.pushState({page_no: which_navigation.toString() }, page_name, "?"+page_name);
+                $(".content").text('').html(data);
+                if (page_name == 'contacts') {
+                    // $("#ContactParentslide").delay(600).animate({ left: "17.3%" }, 600);
+                    //hide_bottom_right_panel("hide");
+                    //$(".mainrightPanel").hide();
+                } else {
+                    feedDataFromXML(xml_url, page_name);
+                    doslideup();
+                    $('.slide-up').css('top', '0');
+                }
+            }
+        });
+        return false;
+        console.log("END");
+    });
+
+    // service description page
+    $(".check_service_description").live('click', function () {
+        var diff = $(".mCSB_container").width() - $(window).width();
+        //alert('in 2nd');
+
+        $(".mCSB_container").css('left', '58%');
+        // $(".mCSB_dragger").css('left', '58%');
+
+        var xml_url = "Xml/all_pages.xml";
+        var page_name = $(this).data("page-name");
+        var sibling_index = $(this).data("sibling-index");
+        var item_index = $(this).data("item-index");
+        console.log("sibling_index");
+        console.log(sibling_index);
+        // assign the previous and next page value in hidden field.
+        assign_prev_next_page(this);
+        if (page_name == 'about_us' && (sibling_index == '3' || sibling_index == '2')) {
+            if (sibling_index == '2') {
+                BindMilestone();
+            }
+            else {
+                BindTeam();
+            }
+        } else {
+            //alert('in 2nd else');
+            showDescription(page_name, sibling_index, item_index);
+        }
+    });
+
+    // Careers form
+    $(".upload_form").live('submit', function () {
+        console.log("Captcha check");
+        console.log($(".custom_captcha_hidden").val());
+        console.log($(".captcha_value").val());
+        var is_blank = false;
+        $(".input").each(function () {
+            if ($(this).val() == "") {
+                console.log($(this).val());
+                alert("All fields are mandatory.");
+                is_blank = true;
+                return false;
+            }
+        });
+        if (is_blank) { return false; }
+        if ($(".custom_captcha_hidden").val() != $(".captcha_value").val()) {
+            alert("Please check CAPTCHA.");
+            return false;
+        }
+        console.log($(this).serialize());
+        $.ajax({
+            url: "http://ruby-test.ihorsetechnologies.com:4000/resume_form/?name=saravanan&email=psaravanan11@gmail.com",
+            type: "get",
+            dataType: "jsonp",
+            data: $(this).serialize(),
+            success: function (data) {
+                console.log("test ajax success ");
+                console.log(data);
+                console.log(data.status);
+                alert("Thank you.");
+                $(".upload_form")[0].reset();
+            }
+        });
+        return false;
+    });
+
+    // Inner Page page
+    $(".check_service_detail").live('click', function () {
+        api.playToggle();
+        $('#controls-wrapper').hide();
+        var xml_url = "Xml/all_pages.xml";
+        var page_name = $(this).data("page-name");
+        var sibling_index = $(this).data("sibling-index");
+        var item_index = $(this).data("item-index");
+        // assign the previous and next page value in hidden field.
+        assign_prev_next_page(this);
+
+        if (page_name == 'about_us' && (sibling_index == '3' || sibling_index == '2')) {
+            if (sibling_index == '2') {
+                BindMilestone();
+            } else {
+                BindTeam();
+            }
+        } else {
+            var this_url = url_addhash(this);
+            $.ajax({
+                url: "InnerPage.html",
+                success: function (data) {
+                    $('#contentarea').empty();
+                    $(".content").text('').html(data);
+                    $(".content").html(data);
+                    $("#parentslide").mCustomScrollbar({
+                        horizontalScroll: true,
+                        theme: "light",
+                        autoHideScrollbar: false,
+                        scrollButtons: {
+                            enable: true
+                        }
+                    });
+
+                    $('.bg').fadeIn(400);
+                    var diff = $(".mCSB_container").width() - $(window).width();
+                    if (diff > 200) {
+                        $(".mCSB_container").animate({ left: "-606px" }, 600);
+                        $(".mCSB_dragger").animate({ left: "100%" }, 600);
+                    }
+
+                    selectSibling(page_name, sibling_index, item_index);
+                    //$("#parentslide").delay(600).animate({ left: "17.3%" }, 600);
+
+                    //selectSibling(page_name, sibling_index, item_index);
+                }
+            });
+        }
+        return false;
+    });
+
+
+    var History = window.History; // Note: We are using a capital H instead of a lower h
+    if (!History.enabled) {
+        // History.js is disabled for this browser.
+        // This is because we can optionally choose to support HTML4 browsers or not.
+        return false;
+    } else {
+        var State = History.getState();
+        console.log("Page reloaded.");
+        console.log(State);
+        if (manualStateChange == true) {
+            var title = State.title;
+            var nav_name = State.data.page_class;
+            var page_url = State.data.page_url;
+            var page_name = State.data.page_name;
+            var sibling_index = State.data.sibling_index;
+            var item_index = State.data.item_index;
+            if (nav_name == "undefined ") {
+                var title = "Home";
+                var nav_name = "home";
+                var page_url = State.url;
+                var page_name = "home";
+                var sibling_index = "";
+                var item_index = "";
+            }
+            ajax_load_content(nav_name, page_name, page_url, title, sibling_index, item_index);
+        }
+        manualStateChange = true;
+    }
+
+    History.Adapter.bind(window, 'statechange', function () { // Note: We are using statechange instead of popstate
+        var State = History.getState(); // Note: We are using History.getState() instead of event.state
+        if (manualStateChange == true) {
+
+            //alert("back button");
+            console.log("back button pressed");
+            console.log(State);
+            console.log("back button pressed name");
+            var title = State.title;
+            var nav_name = State.data.page_class;
+            console.log("nav_name");
+            console.log(nav_name);
+            var page_url = State.data.page_url;
+            var page_name = State.data.page_name;
+            var sibling_index = State.data.sibling_index;
+            var item_index = State.data.item_index;
+            if (typeof (nav_name) == "undefined") {
+                var title = "Home";
+                var nav_name = "home";
+                var page_url = State.url;
+                var page_name = "";
+            }
+            ajax_load_content(nav_name, page_name, page_url, title, sibling_index, item_index);
+        } else {
+            //alert("back button not PRESSED");
+            console.log("back button NOT pressed");
+            console.log(State);
+        }
+        manualStateChange = true;
+
+    });
+
+});
+
+// for previous and next page
+
+function arrow_navigation(side) {
+    console.log("Keyboard navigation");
+    if (side == "right") {
+        var page_name = $(".iht_next_page").data("page-name");
+        var which_navigation = $(".iht_next_page").data("which-navigation");
+        if (which_navigation == "top_nav_link") {
+            $("a[data-page-name='" + page_name + "'][data-which-navigation='" + which_navigation + "']").click();
+        } else {
+            if (page_name == "services") {
+                var sibling_index = $(".iht_next_page").data("sibling-index");
+            } else {
+                var sibling_index = $(".iht_next_page").data("next-item");
+            }
+            var item_index = $(".iht_next_page").data("next-item");
+            $("a[data-page-name='" + page_name + "'][data-which-navigation='" + which_navigation + "'][data-sibling-index='" + sibling_index + "'][data-item-index='" + item_index + "']").click();
+        }
+    } else if (side == "left") {
+        var page_name = $(".iht_prev_page").data("page-name");
+        var which_navigation = $(".iht_prev_page").data("which-navigation");
+        if (which_navigation == "top_nav_link") {
+            $("a[data-page-name='" + page_name + "'][data-which-navigation='" + which_navigation + "']").click();
+        } else {
+            if (page_name == "services") {
+                var sibling_index = $(".iht_prev_page").data("sibling-index");
+            } else {
+                var sibling_index = $(".iht_prev_page").data("prev-item");
+            }
+            if (page_name == 'about_us' && (sibling_index == '1')) {
+                var item_index = 0;
+            } else {
+                var item_index = $(".iht_prev_page").data("prev-item");
+            }
+            //var item_index = $(".iht_prev_page").data("prev-item");
+            console.log("sibling and item");
+            console.log(page_name);
+            console.log($(".iht_prev_page"));
+            console.log(sibling_index);
+            console.log(item_index);
+            console.log($("a[data-page-name='" + page_name + "'][data-which-navigation='" + which_navigation + "'][data-sibling-index='" + sibling_index + "'][data-item-index='" + item_index + "']"));
+            $("[data-page-name='" + page_name + "'][data-which-navigation='" + which_navigation + "'][data-sibling-index='" + sibling_index + "'][data-item-index='" + item_index + "']").click();
+        }
+    }
+}
+
+function assign_prev_next_page(e) {
+    var current_page_name = $(e).data("page-name");
+    var prev_page_name = $(e).data("prev-page");
+    var next_page_name = $(e).data("next-page");
+    var which_navigation = $(e).data("which-navigation");
+    if (which_navigation == "top_nav_link") {
+        var sibling_index = 0;
+        var item_index = 0;
+        var prev_item = 0;
+        var next_item = 0;
+    } else {
+        var sibling_index = $(e).data("sibling-index");
+        var item_index = $(e).data("item-index");
+        var prev_item = $(e).data("prev-item");
+        var next_item = $(e).data("next-item");
+    }
+    console.log("assign pre next page");
+    console.log(sibling_index);
+    console.log(next_item);
+    console.log(prev_item);
+    $(".iht_current_page").data("page-name", current_page_name).data("which-navigation", which_navigation).data("sibling-index", sibling_index).data("item-index", item_index);
+    $(".iht_prev_page").data("prev-item", prev_item).data("page-name", prev_page_name).data("which-navigation", which_navigation).data("sibling-index", sibling_index).data("item-index", item_index);
+    $(".iht_next_page").data("next-item", next_item).data("page-name", next_page_name).data("which-navigation", which_navigation).data("sibling-index", sibling_index).data("item-index", item_index);
+    console.log($(".iht_prev_page").data("prev-item"));
+    console.log($(".iht_prev_page").data("page-name"));
+}
+
+// for Captcha
+
+function assign_captach_value() {
+    var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZ";
+    var string_length = 6;
+    var num_chars = chars.length;
+    var result = '';
+
+    while (string_length--) {
+        result += chars[Math.floor(Math.random() * num_chars)];
+    }
+    console.log("captacha value " + result);
+    $(".custom_captcha_hidden").val(result);
+    $(".custom_captcha_show").text(result);
+}
+
+//function hide_bottom_right_panel(val) {
+//    if (val == "hide") {
+//        $(".mainrightPanel").hide();
+//    } else {
+//        $(".mainrightPanel").show();
+//    }
+//}
+
+function ajax_load_content(navigation, page_name, file_name, title, sibling_index, item_index) {
+    var this_url = file_name;
+    console.log("ajax function");
+    console.log(navigation);
+    console.log(page_name);
+    if (navigation == "top_nav_link") {
+        //api.playToggle();
+        var xml_url = "Xml/all_pages.xml";
+        console.log(page_name);
+        $.ajax({
+            //url: $(t).attr("href"),
+            url: this_url,
+            success: function (data) {
+                //History.pushState({page_no: which_navigation.toString() }, page_name, "?"+page_name);
+                $('#contentarea').empty();
+                $('#controls-wrapper').hide();
+                $(".content").text('').html(data);
+                if (page_name == 'contacts') {
+                    // $("#ContactParentslide").delay(600).animate({ left: "17.3%" }, 600);
+                } else {
+                    feedDataFromXML(xml_url, page_name);
+                    doslideup();
+                    $('.slide-up').css('top', '0');
+                }
+            }
+        });
+        return false;
+    } else if (navigation == "check_service_detail") {
+        // api.playToggle();
+        var xml_url = "Xml/all_pages.xml";
+        var sibling_index = sibling_index;
+        var item_index = item_index;
+        if (page_name == 'about_us' && (sibling_index == '3' || sibling_index == '2')) {
+            if (sibling_index == '2') {
+                BindMilestone();
+            } else {
+                BindTeam();
+            }
+        } else {
+            $.ajax({
+                url: "InnerPage.html",
+                success: function (data) {
+                    $('#contentarea').empty();
+                    $('#controls-wrapper').hide();
+                    $(".content").text('').html(data);
+                    $(".content").html(data);
+                    $("#parentslide").mCustomScrollbar({
+                        horizontalScroll: true,
+                        theme: "light",
+                        autoHideScrollbar: false,
+                        scrollButtons: {
+                            enable: true
+                        }
+                    });
+
+                    $('.bg').fadeIn(400);
+                    var diff = $(".mCSB_container").width() - $(window).width();
+                    if (diff > 200) {
+                        $(".mCSB_container").animate({ left: "-606px" }, 600);
+                        $(".mCSB_dragger").animate({ left: "100%" }, 600);
+                    }
+
+                    selectSibling(page_name, sibling_index, item_index);
+                    //$("#parentslide").delay(600).animate({ left: "17.3%" }, 600);
+
+                    //selectSibling(page_name, sibling_index, item_index);
+                }
+            });
+        }
+        return false;
+    }
+}
+function capitaliseFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+function url_addhash(e) {
+    //History.pushState({about:1}, "about_us", "?about_us=1");
+    var page_name = $(e).data("page-name");
+    var which_navigation = $(e).data("which-navigation");
+    var sibling_index = $(e).data("sibling-index");
+    var item_index = $(e).data("item-index");
+    console.log("manualStateChange");
+    console.log(manualStateChange);
+    console.log(item_index);
+    manualStateChange = false;
+    if ($(e).attr("href").charAt(0) == '#') {
+        var url = $(e).attr("href");
+        url = url.replace(/^.*#/, '');
+        console.log("history push");
+        //if(page_name=="services" && which_navigation=="check_service_detail"){
+        if (which_navigation == "top_nav_link") {
+            var postfix_url = "";
+        } else {
+            //var postfix_url = "";
+            var postfix_url = "_" + sibling_index + item_index;
+        }
+        History.pushState({ page_class: which_navigation.toString(), page_name: page_name, page_url: url, sibling_index: sibling_index, item_index: item_index }, "iHorse " + capitaliseFirstLetter(page_name), "?" + page_name + postfix_url);
+        return url;
+    } else {
+        console.log("history push else");
+        return url;
+    }
+}
+
+function pageload(hash) {
+    if (hash) {
+        alert(hash);
+        console.log(hash);
+    } else {
+        alert("hash");
+        console.log("hash");
+    }
+}
+
+function doslideup() {
+    var li_length = $(".slide-up").length;
+    $(".slide-up").each(function (i, v) {
+        setTimeout(function () {
+            $(v).animate({ "marginTop": "0", "opacity": 1 }, 500);
+            $(v).fadeIn();
+        }, (i * 50));
+        if ((i + 1) == li_length) {
+            $(".inner-container_sub_bottom").delay(900).fadeIn();
+        }
+    });
+}
+function split_string(content) {
+
+    var longMessage = content,
+        charLimit = 1000,
+        maxSplits = 15,
+        placeholder,
+        indicator,
+        breakPoint,
+        messages = [],
+        n,
+        m,
+        splits;
+
+    // Take an indicator '(x/splits)' for example. The indicator must be either 5, 6, or 7
+    // characters wide: '(1/1)' all the way to '(1/9)', '(1/10)' all the way to '(9/15)', or
+    // '(10/10)' all the way to '(15/15)'. We only have to consider the first case versus
+    // either of the other two (because we only care about knowing if y is one digit or two and
+    // y is always two digits in any of the second or third cases. So, assume the indicator is 5
+    // characters wide. Then, if inserting the indicators yields a length less than or equal to the
+    // length of a 9-part message, we know that y is one digit. Otherwise, it's two.
+
+    var totalLength = longMessage.length + (9 * 5);
+
+    // Use some obscure placeholder character that no one will actually type... (This part is a
+    // little dangerous...
+    if (totalLength <= (charLimit * 9)) {
+        placeholder = '\v';
+    }
+    else {
+        placeholder = '\v\v';
+    }
+
+    for (n = 0, m = 0; n < longMessage.length / charLimit && n < maxSplits; n++) {
+        m = n * charLimit;
+        // set the indicator so we can now how long it is
+        indicator = '(' + (n + 1) + '/' + placeholder + ')';
+        // set the breakpoint, taking indicator length into consideration
+        breakPoint = m + charLimit - indicator.length;
+        // insert the indicator into the correct spot
+        longMessage = longMessage.substring(0, breakPoint) + longMessage.substring(breakPoint);
+    }
+
+    // Replace the placeholder.
+    longMessage = longMessage.replace(/\v+/g, n);
+
+    splits = n;
+
+    // Split the indicator-inserted message at every charLimit.
+    for (n = 0; n < splits; n++) {
+        m = n * charLimit;
+        messages.push(longMessage.substring(m, m + charLimit));
+    }
+
+    return messages;
+}
+//milestone
+function BindMilestone() {
+    //  alert('milestone');
+    $.ajax({
+        url: 'Milestone.html',
+        success: function (data) {
+            $(".content").text('').html(data);
+            $('.bg').fadeIn(400);
+            $("#parentslide").mCustomScrollbar({
+                horizontalScroll: true,
+                theme: "light",
+                autoHideScrollbar: false,
+                scrollButtons: {
+                    enable: true
+                }
+            });
+            var diff = $(".mCSB_container").width() - $(window).width();
+            $('#menubox').css('margin-top', '7.5%');
+            $(".mCSB_container").animate({ left: "-40%" }, 600);
+            $(".mCSB_dragger").animate({ left: "287px" }, 600);
+
+        }
+    });
+}
+//team Pag
+
+function BindTeam() {
+     //alert('team');
+    $.ajax({
+        url: 'Team.html',
+        success: function (data) {
+
+            $(".content").text('').html(data);
+            $("#parentslide").mCustomScrollbar({
+                horizontalScroll: true,
+                width_style: 1,
+                theme: "light",
+                autoHideScrollbar: false,
+                scrollButtons: {
+                    enable: true
+                }
+            });
+
+            $('.bg').fadeIn(400);
+            var diff = $(".mCSB_container").width() - $(window).width();
+            $('.mCSB_container').css('padding-left', '80%');
+
+            $(".mCSB_container").animate({ left: "-45%" }, 600);
+            $(".mCSB_dragger").animate({ left: "102px" }, 600);
+
+        }
+    });
+}
+
+//Team Script
+function locationMsg(leftval) {
+    if ($(".locationStutus").length > 0) {
+        if (leftval < -580 && leftval > -2450) {
+            $('.VisionaryStatus').css("background-color", '#1F92D1');
+            $('.ExecutiveStatus').css("background-color", '#DBDBDB');
+
+            $('.ConsultantStatus').css("background-color", '#DBDBDB');
+        }
+        else if (leftval < -2451 && leftval > -4325) {
+            $('.VisionaryStatus').css("background-color", '#DBDBDB');
+            $('.ExecutiveStatus').css("background-color", '#99B23F');
+
+            $('.ConsultantStatus').css("background-color", '#DBDBDB');
+        }
+        else if (leftval < -4325) {
+            $('.VisionaryStatus').css("background-color", '#DBDBDB');
+            $('.ExecutiveStatus').css("background-color", '#DBDBDB');
+            $('.ConsultantStatus').css("background-color", '#CF7814');
+        }
+        else {
+            $('.VisionaryStatus').css("background-color", '#DBDBDB');
+            $('.ExecutiveStatus').css("background-color", '#DBDBDB');
+            $('.ConsultantStatus').css("background-color", '#DBDBDB');
+
+        }
+
+    }
+}
